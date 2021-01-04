@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logfile>
+  <HDXK.mrt>
+    <tenthe>PageFooterBand1</tenthe>
+    <noidungcu>FooterBand</noidungcu>
+    <noidungmoi>GroupFooterBand</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>PrintAtBottom</tenthe>
+    <noidungcu>True</noidungcu>
+    <noidungmoi>Thêm</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>Text</tenthe>
+    <noidungcu>{CTVT0.Relation.AmountInWord}</noidungcu>
+    <noidungmoi>Sửa</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>Text</tenthe>
+    <noidungcu>{CTVT0.Relation.AmountInWord}</noidungcu>
+    <noidungmoi>Sửa</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>Text</tenthe>
+    <noidungcu>{CTVT0.Relation.AmountInWord}</noidungcu>
+    <noidungmoi>Sửa</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>Text</tenthe>
+    <noidungcu>{CTVT0.Relation.TTien2 - CTVT0.Relation.TTien4}</noidungcu>
+    <noidungmoi>Sửa</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>Text</tenthe>
+    <noidungcu>{CTVT0.Relation.Ma_Tte != Default_Currency ? CTVT0.Relation.Ty_Gia : 0}</noidungcu>
+    <noidungmoi>Sửa</noidungmoi>
+  </HDXK.mrt>
+  <HDXK.mrt>
+    <tenthe>Text</tenthe>
+    <noidungcu>{CTVT0.Relation.Ma_Tte != Default_Currency ? "Tỷ giá:" : ""}</noidungcu>
+    <noidungmoi>Sửa</noidungmoi>
+  </HDXK.mrt>
+</logfile>
