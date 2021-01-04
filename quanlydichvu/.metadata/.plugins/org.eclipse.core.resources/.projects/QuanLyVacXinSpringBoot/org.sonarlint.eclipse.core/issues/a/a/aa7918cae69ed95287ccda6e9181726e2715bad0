@@ -1,0 +1,33 @@
+
+c
+java:S3740M"/Provide the parametrized type for this generic.(…“æƒ8¦ÑÀ£ì.Hõ¾RMAJORZ
+CODE_SMELL
+ˆ
+java:S2159B"VRemove this call to "equals"; comparisons between unrelated types always return false.(¡ÌÖĞûÿÿÿÿ8¼–½­é.HÙ¾RMAJORZBUG
+z
+java:S4684m"@Replace this persistent entity with a simple POJO or DTO object.(¨óšÌ8üüõçé.Hß¾RCRITICALZVULNERABILITY
+ 
+java:S1488["gImmediately return this expression instead of assigning it to the temporary variable "customerRoomDto".(¨ë¼”ûÿÿÿÿ8ô©–ˆé.HØ¾RMINORZ
+CODE_SMELL
+q
+java:S2583W"DChange this condition so that it does not always evaluate to "false"(¼¬ñ8ÓÁ™üè.Hâ¾RMAJORZBUG
+q
+java:S2583p"DChange this condition so that it does not always evaluate to "false"(¼¬ñ8Éã›íé.HÛ¾RMAJORZBUG
+„	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üşı»8ÓÁ™üè.H×¾RMINORZ
+CODE_SMELL
+
+java:S1488b"dImmediately return this expression instead of assigning it to the temporary variable "customerRoom".(İÂöÂúÿÿÿÿ8ÓÁ™üè.Há¾RMINORZ
+CODE_SMELL
+ˆ
+java:S2159C"VRemove this call to "equals"; comparisons between unrelated types always return false.(‚„ìĞùÿÿÿÿ8üüõçé.Hà¾RMAJORZBUG
+c
+java:S37407"/Provide the parametrized type for this generic.(…“æƒ8úÉ¤é.HÖ¾RMAJORZ
+CODE_SMELL
+
+java:S2293F"YReplace the type specification in this constructor call with the diamond operator ("<>").(º¡¹À8úÉ¤é.HÕ¾RMINORZ
+CODE_SMELL
+z
+java:S4684g"@Replace this persistent entity with a simple POJO or DTO object.(µ¿¹Ã8ÓÁ™üè.HÚ¾RCRITICALZVULNERABILITY
+
+java:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(º¡¹À8¦ÑÀ£ì.Hö¾RMINORZ
+CODE_SMELL

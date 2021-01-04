@@ -1,0 +1,7 @@
+package com.quanly.demo.controller;
+
+@Controller
+@RequestMapping(value="userInfoController")
+public class UserInfoController {
+
+}

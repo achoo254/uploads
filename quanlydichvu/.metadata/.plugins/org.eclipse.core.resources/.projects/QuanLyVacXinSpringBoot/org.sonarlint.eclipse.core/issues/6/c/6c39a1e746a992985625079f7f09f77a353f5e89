@@ -1,0 +1,16 @@
+
+
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(‚τώÿÿÿÿ8φ®ωκ.Hξ²RCRITICALZVULNERABILITY
+q
+java:S1128"8Remove this unused import 'org.modelmapper.ModelMapper'.(σΏΤϊÿÿÿÿ8ίξ ωκ.Hο²RMINORZ
+CODE_SMELL
+t
+java:S1128"ARemove this unused import 'com.quanly.demo.mapper.MapperConvert'.(‡ά“8ίξ ωκ.Hπ²RMINORZ
+CODE_SMELL
+u
+java:S1128"ARemove this unused import 'com.quanly.demo.model.RegimenDetails'.(έ¦ο©8‹®Ψύκ.Hρ²RMINORZ
+CODE_SMELL
+z
+java:S4684#"@Replace this persistent entity with a simple POJO or DTO object.(΄ιΑ8‹®Ψύκ.Hς²RCRITICALZVULNERABILITY
+v
+java:S2583%"DChange this condition so that it does not always evaluate to "false"(άώφΊϊÿÿÿÿ8‹®Ψύκ.Hσ²RMAJORZBUG

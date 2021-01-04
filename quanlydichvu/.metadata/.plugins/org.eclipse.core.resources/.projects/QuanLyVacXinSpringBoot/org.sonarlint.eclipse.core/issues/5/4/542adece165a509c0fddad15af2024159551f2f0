@@ -1,0 +1,22 @@
+
+‚
+java:S1128"NRemove this unused import 'com.fasterxml.jackson.annotation.JsonIdentityInfo'.(—éÑğ8Øº˜‚é.H¨RMINORZ
+CODE_SMELL
+|
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8«‡×Ùè.H¨RMINORZ
+CODE_SMELL
+†
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8ŸƒËÜè.H‹¨RMINORZ
+CODE_SMELL
+„
+java:S1128"PRemove this unused import 'com.fasterxml.jackson.annotation.ObjectIdGenerators'.(èîí8Øº˜‚é.H‰¨RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.annotation.JsonBackReference'.(»Ôœ¿ıÿÿÿÿ8ÉÈ¨øè.HŒ¨RMINORZ
+CODE_SMELL
+’
+java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŸÖçøÿÿÿÿ8·¦½¢ê.H¨RMINORZ
+CODE_SMELL
+‹
+java:S2293E"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÕáÒ×ûÿÿÿÿHŠ¨RMINORZ
+CODE_SMELL

@@ -1,0 +1,15 @@
+
+’
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÓúÆüÿÿÿÿ8†é–‡é.HıRMINORZ
+CODE_SMELL
+c
+java:S3740&"/Provide the parametrized type for this generic.(…“æƒ8˜«•‡é.HöRMAJORZ
+CODE_SMELL
+h
+java:S1068"/Remove this unused "modelMapper" private field.(ØÀıÿÿÿÿ8¸¶´‡é.H÷RMAJORZ
+CODE_SMELL
+s
+java:S1128":Remove this unused import 'com.quanly.demo.model.Product'.(§Úºıÿÿÿÿ8™À—‡é.HüRMINORZ
+CODE_SMELL
+v
+java:S25832"DChange this condition so that it does not always evaluate to "false"(²ÃÎøÿÿÿÿ8ûËÓûè.HøRMAJORZBUG

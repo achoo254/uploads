@@ -1,0 +1,5 @@
+package com.quanly.demo.api;
+
+public class NotifyController {
+
+}

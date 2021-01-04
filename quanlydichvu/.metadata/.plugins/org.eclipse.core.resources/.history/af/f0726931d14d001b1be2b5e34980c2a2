@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="f"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:include page="/WEB-INF/includes/meta.jsp"></jsp:include>
+<title>Add products</title>
+<jsp:include page="/WEB-INF/includes/header.jsp"></jsp:include>
+</head>
+<body>
+	<jsp:include page="/WEB-INF/includes/navbar.jsp"></jsp:include>
+	<f:form action="insertProducts.htm" modelAttribute="insertPro"
+		method="post">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>Product Id:</td>
+					<td><f:input path="productId" /></td>
+				</tr>
+				<tr>
+					<td>Product Name:</td>
+					<td><f:input path="productName" /></td>
+				</tr>
+				<tr>
+					<td>Price:</td>
+					<td><f:input path="price" /></td>
+				</tr>
+				<tr>
+					<td>Create:</td>
+					<td><f:input type="date" path="created" /></td>
+				</tr>
+				<tr>
+					<td>Title:</td>
+					<td><f:input path="title" /></td>
+				</tr>
+				<tr>
+					<td>Descriptions:</td>
+					<td><f:input path="descriptions" /></td>
+				</tr>
+				<tr>
+					<td>Status:</td>
+					<td><f:radiobutton path="proStatus" value="1" />True <f:radiobutton
+							path="proStatus" value="0" />False</td>
+				</tr>
+				<tr>
+					<td>Categories:</td>
+					<td><f:select path="cate.catId" class="custom-select">
+							<c:forEach items="${insertCate}" var="cate">
+								<f:option value="${cate.catId}">${cate.catName}</f:option>
+							</c:forEach>
+						</f:select></td>
+				</tr>
+				<tr>
+					<td colspan="1">Save</td>
+					<td colspan="2"><input type="submit" value="Save"
+						name="action" /></td>
+				</tr>
+			</tbody>
+		</table>
+	</f:form>
+</body>
+<jsp:include page="/WEB-INF/includes/footer.jsp"></jsp:include>
+</html>

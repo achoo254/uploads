@@ -1,0 +1,13 @@
+
+t
+java:S1128";Remove this unused import 'com.quanly.demo.model.UserInfo'.(¦ÔŒÿÿÿÿÿ8“ÁŒûê.Hõ¤RMINORZ
+CODE_SMELL
+p
+java:S1128"7Remove this unused import 'com.quanly.demo.model.Room'.(ÇÓåıÿÿÿÿ8Ö“ˆùê.Hö¤RMINORZ
+CODE_SMELL
+t
+java:S1128";Remove this unused import 'com.quanly.demo.model.Customer'.(ÆòòÇúÿÿÿÿ8Ö“ˆùê.H÷¤RMINORZ
+CODE_SMELL
+^
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8Ø±üê.Hø¤RMINORZ
+CODE_SMELL

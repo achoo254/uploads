@@ -1,0 +1,13 @@
+
+v
+java:S1128"=Remove this unused import 'com.quanly.demo.model.Categories'.(”æ¨ıÿÿÿÿ8ºš¤’ê.Hş˜RMINORZ
+CODE_SMELL
+x
+java:S1128"?Remove this unused import 'com.quanly.demo.model.OrderDetails'.(«äû¹ıÿÿÿÿ8’¸ÇÄê.H€™RMINORZ
+CODE_SMELL
+’
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Û¥Ñ°ùÿÿÿÿ8¨¯åƒé.Hı˜RMINORZ
+CODE_SMELL
+u
+java:S1128	"ARemove this unused import 'com.quanly.demo.model.RegimenDetails'.(İ¦ï©8ÂÊ‘óê.H’œRMINORZ
+CODE_SMELL

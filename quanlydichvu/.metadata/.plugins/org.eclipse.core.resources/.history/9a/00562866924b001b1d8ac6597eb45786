@@ -1,0 +1,6 @@
+package com.quanly.demo.model.repository;
+
+@Repository
+public interface FileDBRepository {
+
+}

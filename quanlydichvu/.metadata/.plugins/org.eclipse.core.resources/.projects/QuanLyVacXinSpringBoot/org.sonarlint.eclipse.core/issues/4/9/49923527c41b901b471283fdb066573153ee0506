@@ -1,0 +1,7 @@
+
+v
+java:S1128	"=Remove this unused import 'com.quanly.demo.model.Categories'.(”æ¨ıÿÿÿÿ8Ûƒµ’ê.Há´RMINORZ
+CODE_SMELL
+d
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ûƒµ’ê.Hâ´RMINORZ
+CODE_SMELL

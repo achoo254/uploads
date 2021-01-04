@@ -1,0 +1,5 @@
+package com.quanly.demo.model.service;
+
+public class UserInfoServiceImp implements UserInfoService{
+
+}

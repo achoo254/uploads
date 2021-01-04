@@ -1,0 +1,5 @@
+package com.quanly.demo.service;
+
+public interface FilesStorageService {
+
+}

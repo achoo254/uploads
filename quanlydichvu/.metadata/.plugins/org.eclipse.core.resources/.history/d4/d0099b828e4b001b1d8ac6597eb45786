@@ -1,0 +1,8 @@
+package com.quanly.demo.api;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class FileUploadExceptionAdvice extends ResponseEntityExceptionHandler{
+
+}

@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="f"%>
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:include page="/WEB-INF/includes/meta.jsp"></jsp:include>
+<title>Add categories</title>
+<jsp:include page="/WEB-INF/includes/header.jsp"></jsp:include>
+</head>
+<body>
+	<jsp:include page="/WEB-INF/includes/navbar.jsp"></jsp:include>
+	<f:form action="updateCustomer.htm" modelAttribute="updateCus"
+		method="post">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>Customer Id:</td>
+					<td><f:input path="cusId" readonly="true" /></td>
+				</tr>
+				<tr>
+					<td>User Name:</td>
+					<td><f:input path="userName" /></td>
+				</tr>
+				<tr>
+					<td>Passwords:</td>
+					<td><f:input path="passwords" /></td>
+				</tr>
+				<tr>
+					<td>Fullname:</td>
+					<td><f:input path="fullName" /></td>
+				</tr>
+				<tr>
+					<td>Action</td>
+					<td><input type="submit" value="Update" name="action" /> | <a
+						href="deleteCustomer.htm?CusId=${updateCus.cusId}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</f:form>
+</body>
+<jsp:include page="/WEB-INF/includes/footer.jsp"></jsp:include>
+</html>

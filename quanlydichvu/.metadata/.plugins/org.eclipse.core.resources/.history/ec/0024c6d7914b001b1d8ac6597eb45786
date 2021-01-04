@@ -1,0 +1,16 @@
+package com.quanly.demo.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "FileDb")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+public class FileDb {
+
+}

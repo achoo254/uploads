@@ -1,0 +1,12 @@
+package com.quanly.demo.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.quanly.demo.model.Customer;
+import com.quanly.demo.model.Images;
+
+@Repository
+public interface ImagesService extends JpaRepository<Images, Integer>{
+
+}
