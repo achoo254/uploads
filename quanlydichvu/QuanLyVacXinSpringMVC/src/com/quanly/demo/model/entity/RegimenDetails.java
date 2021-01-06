@@ -22,15 +22,15 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "RegimenDetails")
+@Table(name = "regimen_details")
 public class RegimenDetails {
 	
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "RegimenDetailsId")	
+	@Column(name = "regimen_details_id")	
 	private int regimenDetailsId;
 	
-	@Column(name = "DateInject")
+	@Column(name = "date_inject")
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private Date dateInject;
 	
@@ -41,19 +41,19 @@ public class RegimenDetails {
 	private boolean inject;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "regimenId")
+	@JoinColumn(name = "regimen_id")
 	private Regimen regimenDetailsRegimen;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "productDetailsId")
+	@JoinColumn(name = "product_details_id")
 	private ProductDetails regimenDetailsProductDetails;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "customerId")
+	@JoinColumn(name = "customer_id")
 	private Customer regimenDetailsCustomer;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "userInfoId")
+	@JoinColumn(name = "user_info_id")
 	private UserInfo regimenDetailsUserInfo;
 	
 	@OneToMany(mappedBy = "orderDetailsRegimenDetails", cascade = {CascadeType.PERSIST,CascadeType.MERGE})

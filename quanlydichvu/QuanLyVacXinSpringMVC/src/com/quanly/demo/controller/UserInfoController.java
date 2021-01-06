@@ -36,35 +36,43 @@ public class UserInfoController {
 	@Autowired
 	private UserInfoService userInfoService;
 	
-	private UserInfo userInfo = null;
-	
-	@GetMapping(value="/initLogin")
+	@GetMapping(value="/initLogin")//Public access
 	public ModelAndView initLogin() {
 		//Khai bao doi tuong mav
 		ModelAndView mav = new ModelAndView("login");
 		//Khai báo đối tượng object
-		userInfo = new UserInfo();
+		UserInfo userInfo = new UserInfo();
 		//add doi tuong vao mav
 		mav.addObject("userInfo", userInfo);
 		return mav;
 	}
 	
-	@PostMapping(value="/login")
-	public ModelAndView login(@ModelAttribute("userInfo") UserInfo form, RedirectAttributes redirectAttributes, HttpSession session) {
-		List<UserInfo> list = userInfoService.getAllUserInfo();
-		boolean check = GlobalFunctions.checkLogin(list, form, session, redirectAttributes);
-		if(check) {
-			userInfo = userInfoService.getUserInfo(session.getAttribute("token").toString());
-			//Gọi hàm globals để tạo 2 session lưu tên và id
-			GlobalFunctions.getUserInfo(session, userInfo);
-			return new ModelAndView("redirect:/mainController/index");
+	@GetMapping(value="/logout")//Public access
+	public ModelAndView logout(HttpSession session) {
+		if(session != null) {
+			session.invalidate();
+		}
+		return new ModelAndView("redirect:/userInfoController/initLogin");
+	}	
+	
+	@PostMapping(value="/login")//Process login
+	public ModelAndView login(@ModelAttribute("userInfo") UserInfo form, HttpSession session) {
+		UserInfo user = userInfoService.getUserInfoByTelephone(form.getTelephone());
+		if(user != null) {
+			boolean check = GlobalFunctions.checkLogin(user, form, session);
+			if(check) {
+				//Gọi hàm globals để tạo 2 session lưu tên và id
+				GlobalFunctions.getUserInfo(session, user);
+				return new ModelAndView("redirect:/mainController/index");
+			}
 		}
 		else {
 			return new ModelAndView("redirect:/errorController/error404");
 		}
+		return new ModelAndView("redirect:/errorController/error404");
 	}
 	
-	@GetMapping(value="/userInfoDetails/{userInfoId}")
+	@GetMapping(value="/userInfoDetails/{userInfoId}")//Private access
 	public ModelAndView userInfoDetails(@PathVariable("userInfoId") int userInfoId) {
 		//Khai báo mới mav
 		ModelAndView mav = null;
@@ -89,8 +97,10 @@ public class UserInfoController {
 		//Kiểm tra trong CSDL có ID không
 		UserInfo user = userInfoService.getUserInfoById(userInfo.getUserInfoId());
 		if(user != null) {
-			//update
-			boolean check = userInfoService.merge(user);
+			//update (khong update pass, token)
+			userInfo.setPassword(user.getPassword());
+			userInfo.setToken(user.getToken());
+			boolean check = userInfoService.merge(userInfo);
 			if(check) {
 				//Lấy lại thông tin sau khi update
 				UserInfo userUpdate = userInfoService.getUserInfoById(user.getUserInfoId());

@@ -23,7 +23,7 @@ import lombok.Data;
 @Table(name = "Room")
 public class Room {
 	@Id
-	@Column(name = "RoomId")
+	@Column(name = "room_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int roomId;
 	

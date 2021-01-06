@@ -21,7 +21,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "ProductDetails")
+@Table(name = "product_details")
 public class ProductDetails {
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -38,11 +38,11 @@ public class ProductDetails {
 	private Float quantity;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name="productId")
+	@JoinColumn(name="product_id")
 	private Product productDetailsProduct;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "categoriesId")
+	@JoinColumn(name = "categories_id")
 	private Categories productDetailsCategories;
 	
 	@OneToMany(mappedBy = "regimenDetailsProductDetails", cascade = {CascadeType.PERSIST,CascadeType.MERGE})

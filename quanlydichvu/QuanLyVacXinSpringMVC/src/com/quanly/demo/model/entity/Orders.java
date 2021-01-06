@@ -23,11 +23,11 @@ import lombok.Data;
 @Table(name = "Orders")
 public class Orders {
 	@Id
-	@Column(name = "OrderId")
+	@Column(name = "order_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int orderId;
 	
-	@Column(name = "DatePrinted")
+	@Column(name = "date_printed")
 	@Temporal(TemporalType.TIMESTAMP)
 	private java.util.Date datePrinted;
 	

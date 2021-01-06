@@ -21,7 +21,7 @@ import lombok.Data;
 public class Regimen{
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "RegimenId")	
+	@Column(name = "regimen_id")	
 	private int regimenId;
 	
 	@Column(name = "Name", columnDefinition = "NVARCHAR(255)")	

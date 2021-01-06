@@ -25,18 +25,18 @@ import lombok.Setter;
 public class Customer {
 	
 	@Id
-	@Column(name = "CustomerId")	
+	@Column(name = "customer_id")	
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int customerId;
 	
-	@Column(name = "ContactName", columnDefinition = "NVARCHAR(255)")	
+	@Column(name = "contact_name", columnDefinition = "NVARCHAR(255)")	
 	private String contactName;
 	
-	@Column(name = "ContactPhone", columnDefinition = "NVARCHAR(255)")	
+	@Column(name = "contact_phone", columnDefinition = "NVARCHAR(255)")	
 	private String contactPhone;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "userInfoId")
+	@JoinColumn(name = "user_info_id")
 	private UserInfo customerUserInfo;
 	
 	@OneToMany(mappedBy = "customerRoomCustomer", cascade = {CascadeType.PERSIST,CascadeType.MERGE})

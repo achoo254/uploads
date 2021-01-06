@@ -13,20 +13,15 @@ import com.quanly.demo.model.service.UserInfoService;
 
 public class GlobalFunctions {
 
-	public static boolean checkLogin(List<UserInfo> list, UserInfo userInfo, HttpSession session, RedirectAttributes ra) {
+	public static boolean checkLogin(UserInfo user, UserInfo userInfo, HttpSession session) {
 		boolean check = false;
-		for (UserInfo item : list) {
-			//Mã hóa mật khẩu
-			String initConvertPass = MD5Utils.getMd5(userInfo.getPassword());
-			//Convert sang token
-			String token = MD5Utils.getMd5(initConvertPass + userInfo.getTelephone());
-			
-			if(item.getToken().equals(token)) {
-				session.setAttribute("token", item.getToken());
-				ra.addFlashAttribute("flashUserInfo", item);
-				check = true;
-				break;
-			}
+		//Mã hóa mật khẩu
+		String initConvertPass = MD5Utils.getMd5(userInfo.getPassword());
+		//Convert sang token
+		String token = MD5Utils.getMd5(initConvertPass + userInfo.getTelephone());
+		if(user.getToken().equals(token)) {
+			session.setAttribute("token", user.getToken());
+			check = true;
 		}
 		return check;
 	}

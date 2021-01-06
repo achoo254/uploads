@@ -1,5 +1,7 @@
 package com.quanly.demo.model.dao;
 
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -48,8 +50,27 @@ public class UserInfoDaoImp implements UserInfoDao{
 
 	@Override
 	public boolean merge(UserInfo user) {
-		// TODO Auto-generated method stub
-		return false;
+		Session session = null;
+		Transaction transaction = null;
+		boolean check = false;
+		try {
+			// Khoi tao session lam viec voi ObjectJava
+			session = sessionFactory.openSession();
+			// Tu session, khoi tao transaction de lam viec
+			transaction = session.beginTransaction();
+			// Thuc hien update			
+			session.merge(user);
+			transaction.commit();
+			check = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			transaction.rollback();
+		} finally {
+			if (transaction != null) {
+				session.close();
+			}
+		}
+		return check;
 	}
 
 	@Override
@@ -59,7 +80,7 @@ public class UserInfoDaoImp implements UserInfoDao{
 	}
 
 	@Override
-	public UserInfo getUserInfo(String token) {
+	public UserInfo getUserInfoByTelephone(String telephone) {
 		Session session = null;
 		Transaction transaction = null;
 		UserInfo user = null;
@@ -69,8 +90,8 @@ public class UserInfoDaoImp implements UserInfoDao{
 			// Tu session, khoi tao transaction de lam viec
 			transaction = session.beginTransaction();
 			//Criteria criteria = session.createCriteria(UserInfo.class);
-			Query query = session.createQuery("from UserInfo where token = :token");
-			query.setParameter("token", token);
+			Query query = session.createQuery("from UserInfo where telephone = :telephone");
+			query.setParameter("telephone", telephone);
 			user = (UserInfo) query.uniqueResult();
 			if(user != null) {
 				transaction.commit();
@@ -87,6 +108,8 @@ public class UserInfoDaoImp implements UserInfoDao{
 		}
 		return user;
 	}
+	
+	
 
 	@Override
 	public UserInfo getUserInfoById(int id) {

@@ -19,13 +19,13 @@ import lombok.Data;
 public class Contact {
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "ContactId")	
+	@Column(name = "contact_id")	
 	private int contactId;
 	
 	@Column(name = "Name", columnDefinition = "NVARCHAR(255)")	
 	private String name;
 	
-	@Column(name = "FullName", columnDefinition = "NVARCHAR(255)")	
+	@Column(name = "full_name", columnDefinition = "NVARCHAR(255)")	
 	private String fullName;
 
 	@Column(name = "Email", columnDefinition = "NVARCHAR(255)")	

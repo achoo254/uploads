@@ -32,19 +32,19 @@
                       <div class="col-md-5">
                         <div class="form-group">
                           <label class="bmd-label-floating">Id (khóa)</label>
-                          <f:input path="userInfoId" type="text" class="form-control" disabled="true" />
+                          <f:input path="userInfoId" type="text" class="form-control" readonly="true" />
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Số điện thoại (khóa)</label>
-                          <f:input path="telephone" type="text" class="form-control" disabled="true"/>
+                          <f:input path="telephone" type="text" class="form-control" readonly="true"/>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
                           <label class="bmd-label-floating">Địa chỉ email (khóa)</label>
-                          <f:input path="email" type="email" class="form-control" disabled="true"/>
+                          <f:input path="email" type="email" class="form-control" readonly="true"/>
                         </div>
                       </div>
                     </div>
@@ -82,7 +82,7 @@
                       <div class="col-md-4">
             			<div class="form-group">
                           <label for="selectRoles">Phân quyền</label>
-                       	  <f:select path="roles" class="form-control" id="selectRoles">
+                       	  <f:select path="roles" itemValue="${userInfo.roles}" class="form-control" id="selectRoles">
                           <f:option value="Quản trị">Quản trị</f:option>
                           <f:option value="Quản lý">Quản lý</f:option>
                           <f:option value="Bác sĩ">Bác sĩ</f:option>

@@ -9,6 +9,6 @@ public interface UserInfoDao {
 	public boolean save(UserInfo user);
 	public boolean merge(UserInfo user);
 	public boolean delete(int userId);
-	public UserInfo getUserInfo(String token);
+	public UserInfo getUserInfoByTelephone(String telephone);
 	public UserInfo getUserInfoById(int id);
 }

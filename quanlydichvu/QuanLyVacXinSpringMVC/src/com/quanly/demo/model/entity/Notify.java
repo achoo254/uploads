@@ -23,7 +23,7 @@ import lombok.Data;
 @Table(name = "Notify")
 public class Notify {
 	@Id
-	@Column(name = "NotifyId")
+	@Column(name = "notify_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int notifyId;
 	
@@ -38,10 +38,10 @@ public class Notify {
 	private boolean status;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "customerId")
+	@JoinColumn(name = "customer_id")
 	private Customer notifyCustomer;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "roomId")
+	@JoinColumn(name = "room_id")
 	private Room notifyRoom;
 }

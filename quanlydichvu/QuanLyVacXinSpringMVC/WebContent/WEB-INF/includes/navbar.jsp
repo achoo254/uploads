@@ -80,10 +80,10 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Thông tin cá nhân</a>
-                  <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/userInfoDetails/<%=session.getAttribute("userInfoId") %>">Thông tin cá nhân</a>
+                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/userInfoDetails/changePassword/<%=session.getAttribute("userInfoId") %>">Đổi mật khẩu</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Thoát</a>
+                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/logout">Thoát</a>
                 </div>
               </li>
             </ul>

@@ -16,10 +16,10 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "OrderDetails")
+@Table(name = "order_details")
 public class OrderDetails {
 	@Id
-	@Column(name = "OrderDetailsId")
+	@Column(name = "order_details_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int orderDetailsId;
 	
@@ -30,10 +30,10 @@ public class OrderDetails {
 	private int price;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "orderId")
+	@JoinColumn(name = "order_id")
 	private Orders orderDetailsOrder;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "regimenDetailsId")
+	@JoinColumn(name = "regimen_details_id")
 	private RegimenDetails orderDetailsRegimenDetails;
 }

@@ -38,9 +38,9 @@ public class UserInfoServiceImp implements UserInfoService{
 	}
 
 	@Override
-	public UserInfo getUserInfo(String token) {
+	public UserInfo getUserInfoByTelephone(String telephone) {
 		// TODO Auto-generated method stub
-		return userInfoDao.getUserInfo(token);
+		return userInfoDao.getUserInfoByTelephone(telephone);
 	}
 
 	@Override

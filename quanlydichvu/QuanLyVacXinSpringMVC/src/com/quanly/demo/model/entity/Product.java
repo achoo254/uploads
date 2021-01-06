@@ -23,7 +23,7 @@ import lombok.Data;
 public class Product {
 
 	@Id
-	@Column(name = "ProductId")
+	@Column(name = "product_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int productId;
 	

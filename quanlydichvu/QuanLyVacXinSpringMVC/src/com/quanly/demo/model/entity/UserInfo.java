@@ -43,7 +43,7 @@ public class UserInfo {
 	
 	@Column(name = "birthday")
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date birthday;
+	private java.util.Date birthday;
 	
 	@Column(name = "Password", columnDefinition = "NVARCHAR(255)")
 	private String password;

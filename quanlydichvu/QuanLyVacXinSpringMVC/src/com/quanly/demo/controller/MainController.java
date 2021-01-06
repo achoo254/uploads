@@ -15,8 +15,8 @@ import com.quanly.demo.model.entity.UserInfo;
 @RequestMapping(value="mainController")
 public class MainController {
 	
-	@GetMapping(value="/index")
-	public ModelAndView index(@ModelAttribute("flashUserInfo") UserInfo userInfo, HttpSession session, Model model) {
+	@GetMapping(value="/index")//private access
+	public ModelAndView index(HttpSession session) {
 		if(session.getAttribute("token")== null) {
 			return new ModelAndView("redirect:/userInfoController/initLogin");
 		}
