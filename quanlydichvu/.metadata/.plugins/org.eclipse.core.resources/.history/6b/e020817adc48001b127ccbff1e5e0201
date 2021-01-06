@@ -1,9 +1,0 @@
-package com.quanly.demo.model.dto;
-
-import java.sql.Date;
-
-public class OrdersDto {
-	private int orderId;
-	private Date datePrinted;
-	private int total;
-}

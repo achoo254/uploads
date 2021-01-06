@@ -9,5 +9,6 @@ public interface UserInfoService {
 	public boolean save(UserInfo user);
 	public boolean merge(UserInfo user);
 	public boolean delete(int userId);
-	public UserInfo getUserInfo(int userId);
+	public UserInfo getUserInfo(String token);
+	public UserInfo getUserInfoById(int id);
 }

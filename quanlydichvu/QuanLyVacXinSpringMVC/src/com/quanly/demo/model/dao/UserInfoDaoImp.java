@@ -2,7 +2,8 @@ package com.quanly.demo.model.dao;
 
 import java.util.List;
 
-
+import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -58,9 +59,63 @@ public class UserInfoDaoImp implements UserInfoDao{
 	}
 
 	@Override
-	public UserInfo getUserInfo(int userId) {
-		// TODO Auto-generated method stub
-		return null;
+	public UserInfo getUserInfo(String token) {
+		Session session = null;
+		Transaction transaction = null;
+		UserInfo user = null;
+		try {
+			// Khoi tao session lam viec voi ObjectJava
+			session = sessionFactory.openSession();
+			// Tu session, khoi tao transaction de lam viec
+			transaction = session.beginTransaction();
+			//Criteria criteria = session.createCriteria(UserInfo.class);
+			Query query = session.createQuery("from UserInfo where token = :token");
+			query.setParameter("token", token);
+			user = (UserInfo) query.uniqueResult();
+			if(user != null) {
+				transaction.commit();
+			}
+			//user = new UserInfo(1, "hoan dat", "123", "full name");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			transaction.rollback();
+		} finally {
+			if (transaction != null) {
+				session.close();
+			}
+		}
+		return user;
+	}
+
+	@Override
+	public UserInfo getUserInfoById(int id) {
+		Session session = null;
+		Transaction transaction = null;
+		UserInfo user = null;
+		try {
+			// Khoi tao session lam viec voi ObjectJava
+			session = sessionFactory.openSession();
+			// Tu session, khoi tao transaction de lam viec
+			transaction = session.beginTransaction();
+			//Criteria criteria = session.createCriteria(UserInfo.class);
+			Query query = session.createQuery("from UserInfo where userInfoId = :userInfoId");
+			query.setParameter("userInfoId", id);
+			user = (UserInfo) query.uniqueResult();
+			if(user != null) {
+				transaction.commit();
+			}
+			//user = new UserInfo(1, "hoan dat", "123", "full name");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			transaction.rollback();
+		} finally {
+			if (transaction != null) {
+				session.close();
+			}
+		}
+		return user;
 	}
 
 }

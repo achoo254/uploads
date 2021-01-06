@@ -14,7 +14,6 @@
     <title>Quản lý dịch vụ vắc xin</title>
 
     <!-- Custom fonts for this template-->
-    <link href="../resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -44,7 +43,7 @@
                                         <h1 class="h4 text-gray-900 mb-2">Trang quản lý dịch vụ vắc xin</h1>
                                         <p class="mb-4">Sử dụng số điện thoại và mật khẩu để đăng nhập</p>
                                     </div>
-                                    <f:form class="user" action="login.htm" modelAttribute="userInfo" method="post">
+                                    <f:form class="user" action="login" modelAttribute="userInfo" method="post">
                                         <div class="form-group">
                                             <f:input type="text" class="form-control form-control-user"
                                                 path="telephone"
@@ -55,7 +54,7 @@
                                                 path="password"
                                                 placeholder="Nhập mật khẩu..." />
                                         </div>                                        
-                                        <button class="btn btn-primary" type="submit" >Đăng nhập</button>
+                                        <button class="btn btn-primary form-control" type="submit" >Đăng nhập</button>
                                     </f:form>
                                     <hr>
                                 </div>

@@ -42,7 +42,7 @@ public class UserInfo {
 	private String telephone;
 	
 	@Column(name = "birthday")
-	@DateTimeFormat(pattern = "dd-MM-yyyy")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date birthday;
 	
 	@Column(name = "Password", columnDefinition = "NVARCHAR(255)")

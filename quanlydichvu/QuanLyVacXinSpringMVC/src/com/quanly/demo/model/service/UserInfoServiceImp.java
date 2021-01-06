@@ -22,25 +22,31 @@ public class UserInfoServiceImp implements UserInfoService{
 	@Override
 	public boolean save(UserInfo user) {
 		// TODO Auto-generated method stub
-		return false;
+		return userInfoDao.save(user);
 	}
 
 	@Override
 	public boolean merge(UserInfo user) {
 		// TODO Auto-generated method stub
-		return false;
+		return userInfoDao.merge(user);
 	}
 
 	@Override
 	public boolean delete(int userId) {
 		// TODO Auto-generated method stub
-		return false;
+		return userInfoDao.delete(userId);
 	}
 
 	@Override
-	public UserInfo getUserInfo(int userId) {
+	public UserInfo getUserInfo(String token) {
 		// TODO Auto-generated method stub
-		return null;
+		return userInfoDao.getUserInfo(token);
+	}
+
+	@Override
+	public UserInfo getUserInfoById(int id) {
+		// TODO Auto-generated method stub
+		return userInfoDao.getUserInfoById(id);
 	}
 
 }

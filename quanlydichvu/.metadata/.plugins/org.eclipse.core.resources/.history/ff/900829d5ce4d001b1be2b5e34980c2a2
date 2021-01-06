@@ -1,5 +1,0 @@
-package com.quanly.demo.model.dao;
-
-public class UserInfoDaoImp {
-
-}
