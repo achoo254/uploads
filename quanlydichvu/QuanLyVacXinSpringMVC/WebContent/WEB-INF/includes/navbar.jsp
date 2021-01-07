@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="com.quanly.demo.ultis.GlobalFunctions"%>    
+<%@page import="com.quanly.demo.ultis.GlobalFunctions"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>   
 <!DOCTYPE html>
 <div class="sidebar" data-color="purple" data-background-color="white" data-image="<%=GlobalFunctions.baseUrl() %>/resources/assets/img/sidebar-1.jpg">
       <!--
@@ -20,25 +21,25 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/userInfoDetails/<%=session.getAttribute("userInfoId") %>">
+            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/admin/userInfoDetails/<%=session.getAttribute("userInfoId") %>">
               <i class="material-icons">person</i>
               <p>Thông tin cá nhân</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/userInfo">
+            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/admin/userInfo">
               <i class="material-icons">content_paste</i>
               <p>Quản lý tài khoản</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/categoriesController/categories">
+            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/admin/categories">
               <i class="material-icons">library_books</i>
               <p>Quản lý danh mục</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/regimenController/regimen">
+            <a class="nav-link" href="<%=GlobalFunctions.baseUrl() %>/admin/regimen">
               <i class="material-icons">bubble_chart</i>
               <p>Quản lý phác đồ</p>
             </a>
@@ -80,10 +81,10 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/userInfoDetails/<%=session.getAttribute("userInfoId") %>">Thông tin cá nhân</a>
-                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/userInfoDetails/changePassword/<%=session.getAttribute("userInfoId") %>">Đổi mật khẩu</a>
+                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/admin/userInfoDetails/<%=session.getAttribute("userInfoId") %>">Thông tin cá nhân</a>
+                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/admin/userInfoDetails/changePassword/<%=session.getAttribute("userInfoId") %>">Đổi mật khẩu</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/userInfoController/logout">Thoát</a>
+                  <a class="dropdown-item" href="<%=GlobalFunctions.baseUrl() %>/logout">Thoát</a> 
                 </div>
               </li>
             </ul>

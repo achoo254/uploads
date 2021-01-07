@@ -6,6 +6,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="logout"/>
 			<item value="thoát"/>
 			<item value="webUserDetailService"/>
 			<item value="userInfoId"/>
@@ -13,7 +14,6 @@
 			<item value="base"/>
 			<item value="&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;"/>
 			<item value="fixed"/>
-			<item value="website"/>
 		</list>
 		<list key="replacehistory">
 		</list>

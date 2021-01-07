@@ -8,6 +8,7 @@
     Quản lý dịch vụ vắc xin
   </title>
 <jsp:include page="/WEB-INF/includes/meta.jsp"></jsp:include>
+<link href="<%=GlobalFunctions.baseUrl() %>/resources/css/sb-admin-2.min.css" rel="stylesheet">  
 </head>
 <!-- BODY -->
 <body class="">

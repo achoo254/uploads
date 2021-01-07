@@ -83,7 +83,7 @@
             			<div class="form-group">
                           <label for="selectRoles">Phân quyền</label>
                        	  <f:select path="roles" itemValue="${userInfo.roles}" class="form-control" id="selectRoles">
-                          <f:option value="Quản trị">Quản trị</f:option>
+                          <f:option value="ROLE_ADMIN">Quản trị</f:option>
                           <f:option value="Quản lý">Quản lý</f:option>
                           <f:option value="Bác sĩ">Bác sĩ</f:option>
                           <f:option value="Tiếp tân">Tiếp tân</f:option>

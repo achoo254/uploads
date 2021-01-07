@@ -1,7 +1,7 @@
 export const enum eVariables{
 roles_khachhang = 'Khách hàng',
-roles_quanly = 'Quản lý',
-roles_quantri = 'Quản trị',
+roles_quanly = 'ROLE_MOD',
+roles_quantri = 'ROLE_ADMIN',
 roles_tieptan = 'Tiếp tân',
 roles_thungan = 'Thu ngân',
 roles_bacsi = 'Bác sĩ',

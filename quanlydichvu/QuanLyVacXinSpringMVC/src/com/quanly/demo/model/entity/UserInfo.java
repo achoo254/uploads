@@ -12,8 +12,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import lombok.Data;
 
@@ -62,4 +65,11 @@ public class UserInfo {
 	
 	@OneToMany(mappedBy = "regimenDetailsUserInfo", cascade = {CascadeType.PERSIST,CascadeType.MERGE})
 	private List<RegimenDetails> listRegimenDetails = new ArrayList<RegimenDetails>();
+	
+    @Transient
+    public List<GrantedAuthority> getAuthorities() {
+    List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+    authorities.add(new SimpleGrantedAuthority(this.roles));
+    return authorities;
+   }
 }

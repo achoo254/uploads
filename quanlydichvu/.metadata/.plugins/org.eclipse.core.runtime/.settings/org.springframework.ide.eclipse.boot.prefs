@@ -1,7 +1,7 @@
 eclipse.preferences.version=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=3
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.jdbc=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.security=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.security=2
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.sqlserver=3
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=3
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=QuanLyVacXin

@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>   
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %> 
+<%@page import="com.quanly.demo.ultis.GlobalFunctions"%>  
 <!DOCTYPE html>
 <head>
 
@@ -19,7 +20,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../resources/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<%=GlobalFunctions.baseUrl() %>/resources/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -43,19 +44,20 @@
                                         <h1 class="h4 text-gray-900 mb-2">Trang quản lý dịch vụ vắc xin</h1>
                                         <p class="mb-4">Sử dụng số điện thoại và mật khẩu để đăng nhập</p>
                                     </div>
-                                    <f:form class="user" action="login" modelAttribute="userInfo" method="post">
+                                    <form class="user" action="<c:url value='/j_spring_security_login'/>" method="post">
                                         <div class="form-group">
-                                            <f:input type="text" class="form-control form-control-user"
-                                                path="telephone"
+                                            <input type="text" class="form-control form-control-user"
+                                                name="telephone"
                                                 placeholder="Nhập số điện thoại..." />
                                         </div>
                                        <div class="form-group">
-                                            <f:input type="password" class="form-control form-control-user"
-                                                path="password"
+                                            <input type="password" class="form-control form-control-user"
+                                                name="password"
                                                 placeholder="Nhập mật khẩu..." />
                                         </div>                                        
                                         <button class="btn btn-primary form-control" type="submit" >Đăng nhập</button>
-                                    </f:form>
+                                        <input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }">
+                                    </form>
                                     <hr>
                                 </div>
                             </div>
