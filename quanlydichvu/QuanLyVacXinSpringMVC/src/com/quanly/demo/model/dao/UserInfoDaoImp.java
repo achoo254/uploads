@@ -9,6 +9,9 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.MatchMode;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -19,28 +22,23 @@ public class UserInfoDaoImp implements UserInfoDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 	
+	@SuppressWarnings("unchecked")
 	@Override
-	public List<UserInfo> getAllUserInfo() {
-		Session session = null;
-		Transaction transaction = null;
-		List<UserInfo> listUserInfo = null;
-		try {
-			// Khoi tao session lam viec voi ObjectJava
-			session = sessionFactory.openSession();
-			// Tu session, khoi tao transaction de lam viec
-			transaction = session.beginTransaction();
-			listUserInfo = session.createQuery("from UserInfo").list();
-			transaction.commit();
-		} catch (Exception e) {
-			e.printStackTrace();
-			transaction.rollback();
-		} finally {
-			if (transaction != null) {
-				session.close();
-			}
-		}
-		return listUserInfo;
+	public List<UserInfo> getAllUserInfo(Integer offset, Integer maxResult) {
+	       return sessionFactory.openSession()
+	                .createCriteria(UserInfo.class)
+	                .setFirstResult(offset!=null?offset:0)
+	                .setMaxResults(maxResult!=null?maxResult:10)
+	                .list();
 	}
+	
+    @SuppressWarnings("unchecked")
+    public Long count() {
+        return (Long)sessionFactory.openSession()
+                .createCriteria(UserInfo.class)
+                .setProjection(Projections.rowCount())
+                .uniqueResult();
+    }
 
 	@Override
 	public boolean save(UserInfo user) {
@@ -75,8 +73,31 @@ public class UserInfoDaoImp implements UserInfoDao{
 
 	@Override
 	public boolean delete(int userId) {
-		// TODO Auto-generated method stub
-		return false;
+		Session session = null;
+		Transaction transaction = null;
+		boolean check = false;
+		try {
+			// Khoi tao session lam viec voi ObjectJava
+			session = sessionFactory.openSession();
+			// Tu session, khoi tao transaction de lam viec
+			transaction = session.beginTransaction();
+			// Thuc hien delete			
+			javax.persistence.Query query = session.createQuery("delete UserInfo where userInfoId = :userInfoId");
+			query.setParameter("userInfoId", userId);
+			int result = query.executeUpdate();
+			if (result > 0) {
+				check = true;
+				transaction.commit();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			transaction.rollback();
+		} finally {
+			if (transaction != null) {
+				session.close();
+			}
+		}
+		return check;
 	}
 
 	@Override

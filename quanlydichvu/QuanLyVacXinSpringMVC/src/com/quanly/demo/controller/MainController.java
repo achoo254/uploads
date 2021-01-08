@@ -26,10 +26,6 @@ public class MainController {
 	public ModelAndView initLogin(final Model model) {
 		//Khai bao doi tuong mav
 		ModelAndView mav = new ModelAndView("login");
-		//Khai báo đối tượng object
-		UserInfo userInfo = new UserInfo();
-		//add doi tuong vao mav
-		//mav.addObject("userInfo", userInfo);
 		return mav;
 	}
 	

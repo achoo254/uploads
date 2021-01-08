@@ -70,9 +70,25 @@ export class DangkykhamComponent implements OnInit {
             if(customer != null){
               this.customerService.PutCustomer(customer.customerId, this.customer).subscribe((putCustomer : any) => {
                 if(putCustomer != null){
-                  this.isValid = true;
-                  this.btnStatus = 'Quý vị đã cập nhật lại thông tin thành công, Quý vị vui lòng liên hệ tiếp tân để được phục vụ';
-                  return true;
+                  //Gắn giá trị cho đối tượng Customer sau khi thêm mới của CustomerRoom
+                  this.customer = putCustomer;
+                  //Gắn giá trị customerId trong bảng CustomerRoom
+                  this.customerRoom.customerRoomCustomer = new Customer();
+                  this.customerRoom.customerRoomCustomer.customerId = this.customer.customerId;
+                  //Gắn giá trị roomId trong bảng Customer
+                  this.customerRoom.customerRoomRoom = new Room();
+                  this.customerRoom.customerRoomRoom.roomId = this.room.roomId;
+                  //Gán giá trị status trong bảng Customer
+                  this.customerRoom.status = this.customerRoomStatus;
+                  //Gán giá trị order by trong bảng Customer
+                  this.customerRoom.orderBy = this.customerRoomOrderBy;
+                  //Cập nhật CSDL bảng CustomerRoom
+                  this.customerRoomService.PostCustomerRoom(this.customerRoom).subscribe((customerRoom : any) => {
+                    if(customerRoom != null){
+                      this.isValid = true;
+                      this.btnStatus = 'Đăng ký khám thành công, tiếp tân sẽ liên hệ với quý vị để phục vụ';
+                    }
+                  });
                 }
               });
             }
@@ -99,7 +115,7 @@ export class DangkykhamComponent implements OnInit {
                   this.customerRoomService.PostCustomerRoom(this.customerRoom).subscribe((customerRoom : any) => {
                     if(customerRoom != null){
                       this.isValid = true;
-                      this.btnStatus = 'Đăng ký khám thành công, Quý vị vui lòng liên hệ tiếp tân để được phục vụ';
+                      this.btnStatus = 'Đăng ký khám thành công, tiếp tân sẽ liên hệ với quý vị để phục vụ';
                     }
                   });
                 }

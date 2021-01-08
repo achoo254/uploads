@@ -14,9 +14,15 @@ public class UserInfoServiceImp implements UserInfoService{
 	UserInfoDao userInfoDao;
 	
 	@Override
-	public List<UserInfo> getAllUserInfo() {
+	public List<UserInfo> getAllUserInfo(Integer offset, Integer maxResult) {
 		// TODO Auto-generated method stub
-		return userInfoDao.getAllUserInfo();
+		return userInfoDao.getAllUserInfo(offset, maxResult);
+	}
+	
+	@Override
+	public Long count() {
+		// TODO Auto-generated method stub
+		return userInfoDao.count();
 	}
 
 	@Override
@@ -48,5 +54,7 @@ public class UserInfoServiceImp implements UserInfoService{
 		// TODO Auto-generated method stub
 		return userInfoDao.getUserInfoById(id);
 	}
+
+
 
 }

@@ -12,6 +12,14 @@ import com.quanly.demo.model.entity.UserInfo;
 import com.quanly.demo.model.service.UserInfoService;
 
 public class GlobalFunctions {
+	public static String cancelDeleteAdmin = "Không thể xóa tài khoản có quyền Quản trị";
+	public static String cancelDelete = "Không thể xóa vì thông tin đã được sử dụng";
+	public static int totalPages = 0;
+	public static int totalRecords = 0;
+	public static List<Integer> navPages = null;
+    public static int page = 1;
+    public static int maxResult = 20;
+    public static int maxNavigationResult = 10;
 	public static String baseUrl() {
 		final String baseUrl = ServletUriComponentsBuilder.fromCurrentContextPath().build().toUriString();
 		return baseUrl;

@@ -33,7 +33,7 @@
             <script>
               document.write(new Date().getFullYear())
             </script>, sản phẩm <i class="material-icons">favorite</i> thiết kế bởi
-            <a href="https://github.com/achoo254/uploads" target="_blank">sinh viên Bách Khoa - Aptech</a> lớp JW2005LM
+            <a href="https://github.com/achoo254/uploads" target="_blank">Trịnh Quốc Hoàn Đạt</a> lớp JW2005LM
           </div>
         </div>
       </footer>
