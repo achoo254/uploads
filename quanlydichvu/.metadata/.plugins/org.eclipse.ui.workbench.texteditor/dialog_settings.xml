@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="userInfoId"/>
+		<item key="selection" value="UserInfo"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="task"/>
+			<item value="Employees Stats"/>
+			<item value="delete"/>
+			<item value="userinfo"/>
 			<item value="logout"/>
 			<item value="thoát"/>
 			<item value="webUserDetailService"/>
 			<item value="userInfoId"/>
-			<item value="bas"/>
-			<item value="base"/>
-			<item value="&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;"/>
-			<item value="fixed"/>
 		</list>
 		<list key="replacehistory">
 		</list>

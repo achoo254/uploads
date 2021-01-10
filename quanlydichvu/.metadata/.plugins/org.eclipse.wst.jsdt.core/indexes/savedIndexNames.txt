@@ -1,10 +1,8 @@
 INDEX VERSION 1.4+F:\GitHub\uploads\quanlydichvu\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2258168691.index
-2258168691.index
 656372728.index
-2599824200.index
-4040090895.index
-4200633296.index
-3580017080.index
 2733714668.index
 2618241181.index
+3580017080.index
+4200633296.index
+2599824200.index

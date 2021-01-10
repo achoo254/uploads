@@ -19,7 +19,7 @@ import lombok.Data;
 public class Categories {
 	
 	@Id
-	@Column(name = "CategoriesId")	
+	@Column(name = "categories_id")	
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int categoriesId;
 	

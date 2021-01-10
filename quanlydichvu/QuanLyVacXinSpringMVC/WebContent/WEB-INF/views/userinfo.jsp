@@ -30,8 +30,9 @@
 									<div class="table-responsive">
 										<f:form action="search" class="navbar-form" method="get">
 											<div class="input-group no-border">
-												<input type="text" value="" class="form-control" name="telephone"
-													style="bottom: -10px;" placeholder="Tìm kiếm theo số điện thoại...">
+												<input type="text" value="" class="form-control"
+													name="telephone" style="bottom: -10px;"
+													placeholder="Tìm kiếm theo số điện thoại...">
 												<button type="submit"
 													class="btn btn-white btn-round btn-just-icon">
 													<i class="material-icons">search</i>
@@ -41,12 +42,14 @@
 										</f:form>
 										<table class="table" id="datatableUserInfo">
 											<thead class=" text-primary">
-												<th>ID</th>
-												<th>Họ tên</th>
-												<th>Số điện thoại</th>
-												<th>Email</th>
-												<th>Phân quyền</th>
-												<th>Nghiệp vụ</th>
+												<tr>
+													<th>ID</th>
+													<th>Họ tên</th>
+													<th>Số điện thoại</th>
+													<th>Email</th>
+													<th>Phân quyền</th>
+													<th class="text-right">Nghiệp vụ</th>
+												</tr>
 											</thead>
 											<tbody>
 												<f:form action="delete" method="get">
@@ -57,41 +60,41 @@
 															<td>${userInfo.telephone}</td>
 															<td>${userInfo.email}</td>
 															<td>${userInfo.roles}</td>
-															<td><a class="text-primary btn-round"
+															<td class="td-actions text-right"><a
+																class="text-primary btn-round"
 																href="<%=GlobalFunctions.baseUrl()%>/admin/userInfoDetails/${userInfo.userInfoId}">
 																	<i class="material-icons">edit</i> Sửa
 															</a> | <a class="text-primary btn-round" data-toggle="modal"
 																data-target=".bd-example-modal-sm${userInfo.userInfoId}"
 																href=""> <i class="material-icons">delete_forever</i>
 																	Xóa
-															</a>
-
-																<div
-																	class="modal fade bd-example-modal-sm${userInfo.userInfoId}"
-																	tabindex="-1" role="dialog"
-																	aria-labelledby="mySmallModalLabel" aria-hidden="true">
-																	<div class="modal-dialog modal-sm">
-																		<div class="modal-content">
-																			<div class="modal-header">
-																				<h5 class="modal-title">Thông báo</h5>
-																				<button type="button" class="close"
-																					data-dismiss="modal" aria-label="Close">
-																					<span aria-hidden="true">&times;</span>
-																				</button>
-																			</div>
-																			<div class="modal-body">
-																				<p>Bạn chắc chắn muốn xóa?</p>
-																			</div>
-																			<div class="modal-footer">
-																				<button type="submit" class="btn btn-primary"
-																					name="userInfoId" value="${userInfo.userInfoId}">Xóa</button>
-																				<button type="button" class="btn btn-secondary"
-																					data-dismiss="modal">Không xóa</button>
-																			</div>
-																		</div>
-																	</div>
-																</div></td>
+															</a></td>
 														</tr>
+														<div
+															class="modal fade bd-example-modal-sm${userInfo.userInfoId}"
+															tabindex="-1" role="dialog"
+															aria-labelledby="mySmallModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-sm">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title">Thông báo</h5>
+																		<button type="button" class="close"
+																			data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
+																		<p>Bạn chắc chắn muốn xóa?</p>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="submit" class="btn btn-primary"
+																			name="userInfoId" value="${userInfo.userInfoId}">Xóa</button>
+																		<button type="button" class="btn btn-secondary"
+																			data-dismiss="modal">Không xóa</button>
+																	</div>
+																</div>
+															</div>
+														</div>
 													</c:forEach>
 												</f:form>
 											</tbody>

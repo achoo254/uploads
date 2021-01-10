@@ -12,4 +12,5 @@ public interface UserInfoService {
 	public boolean delete(int userId);
 	public UserInfo getUserInfoByTelephone(String telephone);
 	public UserInfo getUserInfoById(int id);
+	public List<UserInfo> getTop5UserInfo();
 }

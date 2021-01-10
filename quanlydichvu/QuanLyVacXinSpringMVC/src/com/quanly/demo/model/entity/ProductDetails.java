@@ -24,6 +24,7 @@ import lombok.Data;
 @Table(name = "product_details")
 public class ProductDetails {
 	@Id
+	@Column(name = "product_details_id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int productDetailsId;
 	

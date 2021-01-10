@@ -55,6 +55,12 @@ public class UserInfoServiceImp implements UserInfoService{
 		return userInfoDao.getUserInfoById(id);
 	}
 
+	@Override
+	public List<UserInfo> getTop5UserInfo() {
+		// TODO Auto-generated method stub
+		return userInfoDao.getTop5UserInfo();
+	}
+
 
 
 }

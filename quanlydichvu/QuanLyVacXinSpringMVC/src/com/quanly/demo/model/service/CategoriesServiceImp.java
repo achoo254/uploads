@@ -15,8 +15,8 @@ public class CategoriesServiceImp implements CategoriesService{
 	CategoriesDao categoriesDao;
 	
 	@Override
-	public List<Categories> getAllCategories() {
-		return categoriesDao.getAllCategories();
+	public List<Categories> getAllCategories(Integer offset, Integer maxResult) {
+		return categoriesDao.getAllCategories(offset, maxResult);
 	}
 
 	@Override
@@ -41,6 +41,18 @@ public class CategoriesServiceImp implements CategoriesService{
 	public Categories getCategories(int categoriesId) {
 		// TODO Auto-generated method stub
 		return categoriesDao.getCategories(categoriesId);
+	}
+
+	@Override
+	public Long count() {
+		// TODO Auto-generated method stub
+		return categoriesDao.count();
+	}
+
+	@Override
+	public Categories findByName(String name) {
+		// TODO Auto-generated method stub
+		return categoriesDao.findByName(name);
 	}
 
 }

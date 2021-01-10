@@ -1,5 +1,0 @@
-package com.quanly.demo.service;
-
-public class FilesStorageServiceImpl implements FilesStorageService{
-
-}

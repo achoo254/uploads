@@ -12,11 +12,11 @@ import com.quanly.demo.model.entity.Regimen;
 public class RegimenServiceImp implements RegimenService{
 	@Autowired
 	RegimenDao regimenDao;
-	
+
 	@Override
-	public List<Regimen> getAllRegimen() {
+	public List<Regimen> getAllRegimen(Integer offset, Integer maxResult) {
 		// TODO Auto-generated method stub
-		return regimenDao.getAllRegimen();
+		return regimenDao.getAllRegimen(offset, maxResult);
 	}
 
 	@Override
@@ -42,5 +42,18 @@ public class RegimenServiceImp implements RegimenService{
 		// TODO Auto-generated method stub
 		return regimenDao.getRegimen(regimenId);
 	}
+
+	@Override
+	public Long count() {
+		// TODO Auto-generated method stub
+		return regimenDao.count();
+	}
+
+	@Override
+	public Regimen findByName(String name) {
+		// TODO Auto-generated method stub
+		return regimenDao.findByName(name);
+	}
+	
 
 }

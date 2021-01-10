@@ -162,4 +162,13 @@ public class UserInfoDaoImp implements UserInfoDao{
 		return user;
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<UserInfo> getTop5UserInfo() {
+	       return sessionFactory.openSession()
+	                .createQuery("from UserInfo order by userInfoId DESC")
+	                .setMaxResults(5)
+	                .list();
+	}
+
 }
