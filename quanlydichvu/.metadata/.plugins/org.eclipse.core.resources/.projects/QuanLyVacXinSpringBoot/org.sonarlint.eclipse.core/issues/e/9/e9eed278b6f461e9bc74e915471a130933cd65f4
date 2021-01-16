@@ -1,29 +1,0 @@
-
-d
-java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8ŒüæÏë.Hä´RMINORZ
-CODE_SMELL
-}
-java:S1128"DRemove this unused import 'org.springframework.core.io.UrlResource'.(ÿÙØ†ÿÿÿÿÿ8ŒüæÏë.Hå´RMINORZ
-CODE_SMELL
-‰	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÉÚƒûÿÿÿÿ8ŒüæÏë.Hæ´RMINORZ
-CODE_SMELL
-~
-java:S1128"ERemove this unused import 'org.springframework.util.FileSystemUtils'.(´Ô°æûÿÿÿÿ8ŒüæÏë.Hç´RMINORZ
-CODE_SMELL
-c
-java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8ŒüæÏë.Hè´RMINORZ
-CODE_SMELL
-d
-java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8ŒüæÏë.Hé´RMINORZ
-CODE_SMELL
-i
-java:S3655#"7Call "Optional#isPresent()" before accessing the value.(ôã¡Õüÿÿÿÿ8©“îÏë.Hê´RMAJORZBUG
-É
-java:S4449"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ó¹À…üÿÿÿÿ8©“îÏë.Hë´RMAJORZ
-CODE_SMELL
-u
-java:S1128"ARemove this unused import 'org.springframework.core.io.Resource'.(¹ÒÁ8ŒüæÏë.Hí´RMINORZ
-CODE_SMELL
-o
-java:S1128";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ8ŒüæÏë.Hî´RMINORZ
-CODE_SMELL
