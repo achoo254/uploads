@@ -1,0 +1,67 @@
+package com.quanly.demo.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "Product")
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+public class Product {
+
+	@Id
+	@Column(name = "ProductId")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int productId;
+	
+	@Column(name = "Name", columnDefinition = "NVARCHAR(255)")
+	private String name;
+	
+	@Column(name = "Details", columnDefinition = "NVARCHAR(500)")
+	private String details;
+	
+	@Column(name = "Dose")
+	private float dose;
+	
+	@Column(name = "Buy")
+	private float buy;
+	
+	@Column(name = "Sell")
+	private float sell;
+	
+	@Column(name = "Country", columnDefinition = "NVARCHAR(255)")
+	private String country;
+
+	@ManyToOne
+	@JoinColumn(name = "categoriesId", referencedColumnName = "categoriesId")
+	private Categories productCategories;
+
+	@JsonIgnore
+	@OneToMany(mappedBy = "productDetailsProduct")
+	private List<ProductDetails> listProductDetails = new ArrayList<ProductDetails>();
+	
+	@JsonIgnore
+	@OneToMany(mappedBy = "inventoryProduct")
+	private List<Inventory> listInventory = new ArrayList<Inventory>();
+	
+	@JsonIgnore
+	@OneToMany(mappedBy = "regimenDetailsProduct")
+	private List<RegimenDetails> listRegimenDetails = new ArrayList<RegimenDetails>();
+
+}

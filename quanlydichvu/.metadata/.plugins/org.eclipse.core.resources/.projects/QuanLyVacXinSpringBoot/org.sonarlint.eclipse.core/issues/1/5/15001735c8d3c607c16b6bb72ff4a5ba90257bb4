@@ -1,0 +1,52 @@
+
+x
+java:S1128"?Remove this unused import 'com.quanly.demo.model.CustomerRoom'.(ïê­¬üÿÿÿÿ8ªºÀüé.HÒ´RMINORZ
+CODE_SMELL
+ƒ
+java:S2159S"VRemove this call to "equals"; comparisons between unrelated types always return false.(Ÿ³¥Í8ñ¯á¤ê.HÖ´RMAJORZBUG
+
+java:S4684Z"@Replace this persistent entity with a simple POJO or DTO object.(°¼ÒÏüÿÿÿÿ8ÇÚ¥ê.H×´RCRITICALZVULNERABILITY
+p
+java:S1128"7Remove this unused import 'com.quanly.demo.model.Room'.(ÇÓåıÿÿÿÿ8—Ìšüé.HÆ´RMINORZ
+CODE_SMELL
+
+java:S4684`"@Replace this persistent entity with a simple POJO or DTO object.(ıºä”øÿÿÿÿ8éì‰¤ê.HÓ´RCRITICALZVULNERABILITY
+s
+java:S1128":Remove this unused import 'com.quanly.demo.model.Product'.(§Úºıÿÿÿÿ8×‘Øüé.HÉ´RMINORZ
+CODE_SMELL
+c
+java:S37406"/Provide the parametrized type for this generic.(…“æƒ8—Ìšüé.HÊ´RMAJORZ
+CODE_SMELL
+’
+java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").(ùìó³şÿÿÿÿ8İÅçüé.HÕ´RMINORZ
+CODE_SMELL
+z
+java:S1128"FRemove this unused import 'com.quanly.demo.model.dto.CustomerRoomDto'.(¡ğõ¿8İÅçüé.HÍ´RMINORZ
+CODE_SMELL
+‚
+java:S2159R"VRemove this call to "equals"; comparisons between unrelated types always return false.(ìÕ¡8ğ±”óê.HË´RMAJORZBUG
+q
+java:S1128 ">Remove this unused import 'com.quanly.demo.model.dto.RoomDto'.(°õ8íãš’ì.H¥µRMINORZ
+CODE_SMELL
+u
+java:S1128"ARemove this unused import 'com.quanly.demo.model.ProductDetails'.(Ø©èš8éì‰¤ê.HÇ´RMINORZ
+CODE_SMELL
+’
+java:S2293V"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿Üß·şÿÿÿÿ8Æ©¨˜ì.H¶¼RMINORZ
+CODE_SMELL
+ˆ
+java:S2159Q"VRemove this call to "equals"; comparisons between unrelated types always return false.(‘³ùÒüÿÿÿÿ8ñ¯á¤ê.HÌ´RMAJORZBUG
+s
+java:S1128":Remove this unused import 'com.quanly.demo.model.Regimen'.(ùÒ±Ñüÿÿÿÿ8×‘Øüé.HÈ´RMINORZ
+CODE_SMELL
+h
+java:S1068."/Remove this unused "modelMapper" private field.(ØÀıÿÿÿÿ8”şœ’ì.H¸µRMAJORZ
+CODE_SMELL
+d
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¬¨ì–ì.Hÿ¹RMINORZ
+CODE_SMELL
+c
+java:S3740D"/Provide the parametrized type for this generic.(…“æƒ8Æ©¨˜ì.Hµ¼RMAJORZ
+CODE_SMELL
+q
+java:S2583b"DChange this condition so that it does not always evaluate to "false"(¹§Å8éì‰¤ê.H´µRMAJORZBUG

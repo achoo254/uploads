@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="vatcan_16" tilewidth="16" tileheight="16">
+  <image source="vatcan_16.png" width="16" height="16"/>
+  <tile id="0">
+   <properties>
+    <property name="vatcan" value="vatcan"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="duongdi" tilewidth="16" tileheight="16">
+  <image source="duongdi.png" width="16" height="16"/>
+ </tileset>
+ <layer name="duongdi" width="32" height="32">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3NsQ0AAAjDsIr/j2Zh4gSwpcxJgK2mr38AAOCeBp7TCVkAEAAA
+  </data>
+ </layer>
+ <layer name="vatcan" width="32" height="32">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QMQ4AIAgEQfD/j7bR1gZ1BW+TK80Y3Mxcw3c7+Wu/jVH+/APpn0y+/Oz+jreZ/UgVfPr+tB+pgk/fn/YjVfDp+9N+pNf8X9cBcEB9nQAQAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,40 @@
+
+
+java:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(­ÿ8¶Ãêì.H§´RMINORZ
+CODE_SMELL
+t
+java:S1128";Remove this unused import 'com.quanly.demo.model.Customer'.(ÆòòÇúÿÿÿÿ8ÆØé°é.Hî³RMINORZ
+CODE_SMELL
+€
+java:S4684©"@Replace this persistent entity with a simple POJO or DTO object.(Éö¹´üÿÿÿÿ8ù×ì.HÄ´RCRITICALZVULNERABILITY
+r
+java:S2583«"DChange this condition so that it does not always evaluate to "false"(áù½¶8ù×ì.HÀ´RMAJORZBUG
+€
+java:S4684›"@Replace this persistent entity with a simple POJO or DTO object.(ŒÇ¥Ûúÿÿÿÿ8Œÿ‰’ë.H‹´RCRITICALZVULNERABILITY
+c
+java:S37402"/Provide the parametrized type for this generic.(…“æƒ8¶Ãêì.H¦´RMAJORZ
+CODE_SMELL
+{
+java:S1128"BRemove this unused import 'com.quanly.demo.model.dto.CustomerDto'.(§âæ¿ÿÿÿÿÿ8ÍËª¦é.Hğ³RMINORZ
+CODE_SMELL
+q
+java:S1128">Remove this unused import 'com.quanly.demo.model.dto.RoomDto'.(°õ8é‚å¤é.Hú³RMINORZ
+CODE_SMELL
+{
+java:S4684Š"@Replace this persistent entity with a simple POJO or DTO object.(³ÅÌ8˜ìóŒë.H…´RCRITICALZVULNERABILITY
+q
+java:S2583z"DChange this condition so that it does not always evaluate to "false"(áù½¶8¸Öé.Hü³RMAJORZBUG
+r
+java:S2583"DChange this condition so that it does not always evaluate to "false"(áù½¶8˜ìóŒë.H‡´RMAJORZBUG
+p
+java:S1128"7Remove this unused import 'com.quanly.demo.model.Room'.(ÇÓåıÿÿÿÿ8˜ìóŒë.H†´RMINORZ
+CODE_SMELL
+r
+java:S2583Œ"DChange this condition so that it does not always evaluate to "false"(áù½¶8Œÿ‰’ë.H€´RMAJORZBUG
+f
+java:S1128"-Remove this unused import 'lombok.CustomLog'.(çî¸ûÿÿÿÿ8ÿµ¨¦é.Hñ³RMINORZ
+CODE_SMELL
+{
+java:S4684…"@Replace this persistent entity with a simple POJO or DTO object.(¶ƒ÷Ä8¿ëãé.HŒ´RCRITICALZVULNERABILITY
+p	java:S125¶"<This block of commented-out lines of code should be removed.(ì’‡Ï8¬Øßé.Hò³RMAJORZ
+CODE_SMELL

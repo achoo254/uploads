@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/login.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/userinfodetails.jsp=UTF-8
+encoding//src/com/quanly/demo/controller/CategoriesController.java=UTF-8
+encoding//src/com/quanly/demo/controller/MainController.java=UTF-8
+encoding//src/com/quanly/demo/controller/RegimenController.java=UTF-8
+encoding//src/com/quanly/demo/controller/UserInfoController.java=UTF-8
+encoding//src/com/quanly/demo/ultis/GlobalFunctions.java=UTF-8

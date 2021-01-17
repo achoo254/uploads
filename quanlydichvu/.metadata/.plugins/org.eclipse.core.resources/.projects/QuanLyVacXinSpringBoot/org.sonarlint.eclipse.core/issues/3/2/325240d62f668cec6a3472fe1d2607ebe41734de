@@ -1,0 +1,47 @@
+
+z
+java:S1128"ARemove this unused import 'com.quanly.demo.model.dto.ProductDto'.(Ô¯´Üûÿÿÿÿ8«­´ˆé.Hä³RMINORZ
+CODE_SMELL
+c
+java:S3740;"/Provide the parametrized type for this generic.(…“æƒ8—ÇÌúë.Hâ³RMAJORZ
+CODE_SMELL
+m
+java:S1128"9Remove this unused import 'com.quanly.demo.model.Notify'.(¡şˆ°8ÊÏúë.H×³RMINORZ
+CODE_SMELL
+u
+java:S1128"ARemove this unused import 'com.quanly.demo.model.dto.RegimenDto'.(Ö¾—­8øú®ˆé.Hæ³RMINORZ
+CODE_SMELL
+’
+java:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(Äºá˜ÿÿÿÿÿ8—ÇÌúë.Hè³RMINORZ
+CODE_SMELL
+“
+java:S1488L"_Immediately return this expression instead of assigning it to the temporary variable "roomDto".(®ØàÅ8Ù¶ˆé.HÜ³RMINORZ
+CODE_SMELL
+
+java:S4684^"@Replace this persistent entity with a simple POJO or DTO object.(†“ôÉûÿÿÿÿ8ÒÚÉé.Hİ³RCRITICALZVULNERABILITY
+m
+java:S1854w"9Remove this useless assignment to local variable "check".(„–¾É8™ßÑúë.Hê³RMAJORZ
+CODE_SMELL
+v
+java:S2583`"DChange this condition so that it does not always evaluate to "false"(Ëî·üÿÿÿÿ8ÒÚÉé.HŞ³RMAJORZBUG
+Œ
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(†ßö8øú®ˆé.Hé³RMINORZ
+CODE_SMELL
+z
+java:S4684m"@Replace this persistent entity with a simple POJO or DTO object.(ïÅîä8ÊÏúë.Hç³RCRITICALZVULNERABILITY
+“
+java:S1488X"_Immediately return this expression instead of assigning it to the temporary variable "roomDto".(®ØàÅ8’ÿ´ˆé.HÖ³RMINORZ
+CODE_SMELL
+c
+java:S3740-"/Provide the parametrized type for this generic.(…“æƒ8ÒÚÉé.Hë³RMAJORZ
+CODE_SMELL
+v
+java:S2583v"DChange this condition so that it does not always evaluate to "false"(Ëî·üÿÿÿÿ8û”Ôúë.HÒ³RMAJORZBUG
+v
+java:S2583T"DChange this condition so that it does not always evaluate to "false"(Ëî·üÿÿÿÿ8ÒÚÉé.HØ³RMAJORZBUG
+s
+java:S1128":Remove this unused import 'com.quanly.demo.model.Regimen'.(ùÒ±Ñüÿÿÿÿ8—ÇÌúë.Hå³RMINORZ
+CODE_SMELL
+u
+java:S1128"ARemove this unused import 'com.quanly.demo.model.ProductDetails'.(Ø©èš8û”Ôúë.Hã³RMINORZ
+CODE_SMELL

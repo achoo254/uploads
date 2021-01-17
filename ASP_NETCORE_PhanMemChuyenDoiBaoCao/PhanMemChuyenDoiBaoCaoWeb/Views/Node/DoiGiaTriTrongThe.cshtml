@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Đổi giá trị trong thẻ";
+}
+<form>
+    <table class="table table-hover table-bordered" id="myTable">
+        <thead class="thead-light border text-center">
+            <tr>
+                <th>Tên thẻ</th>
+                <th>Giá trị cũ</th>
+                <th>Giá trị mới</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" class="form-control" />
+                </td>
+                <td>
+                    <input type="text" class="form-control" />
+                </td>
+                <td>
+                    <input type="text" class="form-control" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button type="submit" class="btn btn-primary">Thực hiện</button>
+        <a href="#" class="btn btn-primary float-right" id="add-row">Thêm thẻ mới</a>
+    </div>
+
+
+</form>
+<script>
+    $(document).ready(function () {
+        $("a").click(function () {
+            alert("The paragraph was clicked.");
+        });
+    });
+</script>
+

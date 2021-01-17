@@ -1,0 +1,31 @@
+
+Œ
+java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(òÛ²k8Í™ôúè.H°RMINORZ
+CODE_SMELL
+’
+java:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŸÖçøÿÿÿÿ8Í™ôúè.HµRMINORZ
+CODE_SMELL
+|
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8ˆ·ÛÙè.H²RMINORZ
+CODE_SMELL
+†
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8øü§øè.H´RMINORZ
+CODE_SMELL
+‚
+java:S1128"NRemove this unused import 'com.fasterxml.jackson.annotation.JsonIdentityInfo'.(—éÑğ8„‚é.H¶RMINORZ
+CODE_SMELL
+„
+java:S1128"PRemove this unused import 'com.fasterxml.jackson.annotation.ObjectIdGenerators'.(èîí8„‚é.H®RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.annotation.JsonBackReference'.(»Ôœ¿ıÿÿÿÿ8øü§øè.H¬RMINORZ
+CODE_SMELL
+^
+java:S1128"*Remove this unused import 'lombok.Getter'.(ùÒµÙ8Í™ôúè.H³RMINORZ
+CODE_SMELL
+^
+java:S1128"*Remove this unused import 'lombok.Setter'.(ó¸çµ8Í™ôúè.H±RMINORZ
+CODE_SMELL
+’
+java:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(„£¨Õúÿÿÿÿ8Í™ôúè.H¯RMINORZ
+CODE_SMELL

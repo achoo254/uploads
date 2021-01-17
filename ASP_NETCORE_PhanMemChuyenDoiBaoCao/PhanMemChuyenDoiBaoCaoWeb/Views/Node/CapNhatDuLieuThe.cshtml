@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Cập nhật dữ liệu thẻ";
+}
+@model PhanMemChuyenDoiBaoCaoWeb.Models.Entity.Modules
+<form asp-action="CapNhatDuLieuTheSubmit" method="post" asp-controller="Node">
+    <!--LẤY GIÁ TRỊ TRÊN URL-->
+    <input type="text" value="@Model.InputFileEdit" name="InputFileEdit" hidden/>
+    <input type="text" value="@Model.InputFileMaster" name="InputFileMaster" hidden/>
+    <!--KÊT THÚC-->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.DoiTenTruongCoDinh" type="checkbox" name="DoiTenTruongCoDinh">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Đổi tên trường cố định" readonly />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.CapNhatThamSo" type="checkbox"  name="CapNhatThamSo">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Cập nhật tham số" readonly />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.DoiNhom" type="checkbox" name="DoiNhom">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Đổi nhóm" readonly />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.ThemLienKetBang" type="checkbox" name="ThemLienKetBang">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Thêm liên kết bảng" readonly />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.ThemTheDuLieu" type="checkbox" name="ThemTheDuLieu">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Thêm thẻ dữ liệu" readonly />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.SuaWatermark" type="checkbox" name="SuaWatermark">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Sửa Watermark" readonly />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input asp-for="@Model.SuaDatasource" type="checkbox" name="SuaDataSource">
+            </div>
+        </div>
+        <input type="text" class="form-control" value="Sửa Data Source" readonly />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Thực hiện</button>
+</form>

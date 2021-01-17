@@ -1,0 +1,13 @@
+
+†
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8†õ–‚é.Hë§RMINORZ
+CODE_SMELL
+z
+java:S1128"FRemove this unused import 'com.quanly.demo.model.dto.OrderDetailsDto'.(¤õ£®8ñÖòÄê.Hì§RMINORZ
+CODE_SMELL
+’
+java:S2293G"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Çöéûÿÿÿÿ8é¢òÄê.Hí§RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.annotation.JsonBackReference'.(»Ôœ¿ıÿÿÿÿ8üÏÉÜè.Hî§RMINORZ
+CODE_SMELL

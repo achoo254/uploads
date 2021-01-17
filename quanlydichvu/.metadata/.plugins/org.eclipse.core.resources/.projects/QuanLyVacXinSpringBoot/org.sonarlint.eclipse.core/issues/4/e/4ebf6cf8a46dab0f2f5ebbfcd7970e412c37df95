@@ -1,0 +1,13 @@
+
+^
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8–¯üê.Hà§RMINORZ
+CODE_SMELL
+Š
+java:S1128"QRemove this unused import 'org.springframework.format.annotation.DateTimeFormat'.(‡ˆôƒøÿÿÿÿ8–¯üê.Há§RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.annotation.JsonBackReference'.(»Ôœ¿ıÿÿÿÿ8ŠÓÄÜè.Hâ§RMINORZ
+CODE_SMELL
+†
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8Î×‘‚é.Hã§RMINORZ
+CODE_SMELL

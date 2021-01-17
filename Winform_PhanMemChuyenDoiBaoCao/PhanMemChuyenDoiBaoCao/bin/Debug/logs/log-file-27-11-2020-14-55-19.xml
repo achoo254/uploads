@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logfile>
+  <CTHDBH.mrt>
+    <tenthe>PageFooter1</tenthe>
+    <noidungcu>Transparent0,27.2,19,0.5None;Black;1;Dot;False;4;BlackTransparent0,0,19,0.5Arial,9,Italicif (!DatePrinted)
+{
+	e.Value = "";
+}
+else
+{
+	e.Value = "Thời điểm in: " + Time;
+}True0,0,0,0Text48BlackCenterTruePageFooter1</noidungcu>
+    <noidungmoi>Thêm</noidungmoi>
+  </CTHDBH.mrt>
+</logfile>
