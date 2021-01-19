@@ -1,8 +1,8 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
 import com.quanly.demo.model.entity.Contact;
+
+import java.util.List;
 
 public interface ContactService {
 	public Long countContact();

@@ -1,8 +1,8 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
 import com.quanly.demo.model.entity.Regimen;
+
+import java.util.List;
 
 public interface RegimenService {
 	public List<Regimen> getAllRegimen(Integer offset, Integer maxResult);

@@ -1,21 +1,15 @@
 package com.quanly.demo.model.dao;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
-import java.util.List;
-
-import org.hibernate.Criteria;
+import com.quanly.demo.model.entity.UserInfo;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.MatchMode;
 import org.hibernate.criterion.Projections;
-import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.quanly.demo.model.entity.UserInfo;
+import java.util.List;
 
 @Repository
 public class UserInfoDaoImp implements UserInfoDao{

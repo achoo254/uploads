@@ -1,11 +1,12 @@
 package com.quanly.demo.ultis;
-import java.io.Writer;
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.JspWriter;
-import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 import lombok.Getter;
 import lombok.Setter;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+import java.io.Writer;
 public class PaginationTaglib extends SimpleTagSupport{
 	@Getter
 	@Setter

@@ -1,12 +1,11 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
+import com.quanly.demo.model.dao.ContactDao;
+import com.quanly.demo.model.entity.Contact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.quanly.demo.model.dao.ContactDao;
-import com.quanly.demo.model.entity.Contact;
+import java.util.List;
 
 @Service
 public class ContactServiceImp implements ContactService{

@@ -1,15 +1,12 @@
 package com.quanly.demo.model.dao;
 
-import java.util.List;
-
+import com.quanly.demo.model.entity.Contact;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.quanly.demo.model.entity.Categories;
-import com.quanly.demo.model.entity.Contact;
-import com.quanly.demo.model.entity.Orders;
+import java.util.List;
 
 @Repository
 public class ContactDaoImp implements ContactDao{

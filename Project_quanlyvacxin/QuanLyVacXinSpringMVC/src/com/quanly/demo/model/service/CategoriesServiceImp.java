@@ -1,13 +1,11 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
-
 import com.quanly.demo.model.dao.CategoriesDao;
 import com.quanly.demo.model.entity.Categories;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CategoriesServiceImp implements CategoriesService{

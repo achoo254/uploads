@@ -1,9 +1,8 @@
 package com.quanly.demo.model.dao;
 
-import java.util.List;
-
-import com.quanly.demo.model.entity.Categories;
 import com.quanly.demo.model.entity.Contact;
+
+import java.util.List;
 
 public interface ContactDao {
 	public Long countContact();

@@ -1,9 +1,8 @@
 package com.quanly.demo.model.service;
 
+import com.quanly.demo.model.dao.ProductDetailsDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.quanly.demo.model.dao.ProductDetailsDao;
 
 @Service
 public class ProductDetailsServiceImp implements ProductDetailsService{

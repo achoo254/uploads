@@ -1,7 +1,6 @@
 package com.quanly.demo.model.dao;
 
-import java.util.List;
-
+import com.quanly.demo.model.entity.Regimen;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -10,8 +9,7 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.quanly.demo.model.entity.Categories;
-import com.quanly.demo.model.entity.Regimen;
+import java.util.List;
 @Repository
 public class RegimenDaoImp implements RegimenDao{
 	@Autowired

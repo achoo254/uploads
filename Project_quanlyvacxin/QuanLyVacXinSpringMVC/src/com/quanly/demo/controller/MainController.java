@@ -1,32 +1,23 @@
 package com.quanly.demo.controller;
 
-import java.text.DecimalFormat;
-import java.util.List;
-
-import javax.servlet.http.HttpSession;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.quanly.demo.model.dao.OrdersDao;
-import com.quanly.demo.model.entity.Categories;
 import com.quanly.demo.model.entity.Contact;
 import com.quanly.demo.model.entity.UserInfo;
 import com.quanly.demo.model.service.ContactService;
 import com.quanly.demo.model.service.OrdersService;
 import com.quanly.demo.model.service.ProductDetailsService;
 import com.quanly.demo.model.service.UserInfoService;
-import com.quanly.demo.ultis.GlobalFunctions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpSession;
+import java.text.DecimalFormat;
+import java.util.List;
 
 @Controller
 public class MainController {

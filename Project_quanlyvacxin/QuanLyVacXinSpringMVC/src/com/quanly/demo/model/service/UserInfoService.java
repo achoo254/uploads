@@ -1,8 +1,8 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
 import com.quanly.demo.model.entity.UserInfo;
+
+import java.util.List;
 
 public interface UserInfoService {
 	public List<UserInfo> getAllUserInfo(Integer offset, Integer maxResult);

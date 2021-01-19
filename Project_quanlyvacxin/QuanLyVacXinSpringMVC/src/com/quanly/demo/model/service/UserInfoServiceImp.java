@@ -1,12 +1,11 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
+import com.quanly.demo.model.dao.UserInfoDao;
+import com.quanly.demo.model.entity.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.quanly.demo.model.dao.UserInfoDao;
-import com.quanly.demo.model.entity.UserInfo;
+import java.util.List;
 
 @Service
 public class UserInfoServiceImp implements UserInfoService{

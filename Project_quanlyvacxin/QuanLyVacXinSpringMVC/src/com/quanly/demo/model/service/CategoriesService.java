@@ -1,8 +1,8 @@
 package com.quanly.demo.model.service;
 
-import java.util.List;
-
 import com.quanly.demo.model.entity.Categories;
+
+import java.util.List;
 
 public interface CategoriesService {
 	public List<Categories> getAllCategories(Integer offset, Integer maxResult);

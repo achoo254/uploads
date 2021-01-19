@@ -1,8 +1,8 @@
 package com.quanly.demo.model.dao;
 
-import java.util.List;
-
 import com.quanly.demo.model.entity.UserInfo;
+
+import java.util.List;
 
 public interface UserInfoDao {
 	public List<UserInfo> getAllUserInfo(Integer offset, Integer maxResult);
