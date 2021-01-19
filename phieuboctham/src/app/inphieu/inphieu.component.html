@@ -1,0 +1,37 @@
+<ng-container *ngFor="let item of listNhanVien">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card border-dark">
+        <div class="border-bottom border-dark" style="height: 65px; padding: 10px;">
+          <h4 class="card-title text-center font-weight-bold">Phiếu bốc thăm trúng thưởng</h4>
+        </div>
+        <div class="border-bottom border-dark" style="height: 30px;">
+          <p class="card-text font-italic text-center">(Liên tham dự bốc thăm)</p>
+        </div>
+        <div class="border-bottom border-dark" style="height: 45px; padding: 10px;">
+          <h5 class="card-text font-italic">Họ và tên: <span class="font-weight-bold"> {{item.hoten}}</span> </h5>
+        </div>
+        <div class="" style="height: 90px; padding: 20px;">
+          <h1 class="card-text font-weight-bold text-center">MSNV: <span> {{item.sobaodanh}}</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card border-dark">
+        <div class="border-bottom border-dark" style="height: 65px; padding: 10px;">
+          <h4 class="card-title text-center font-weight-bold">Phiếu bốc thăm trúng thưởng</h4>
+        </div>
+        <div class="border-bottom border-dark" style="height: 30px;">
+          <p class="card-text font-italic text-center">(Liên đối chiếu)</p>
+        </div>
+        <div class="border-bottom border-dark" style="height: 45px; padding: 10px;">
+          <p class="card-text font-italic">Họ và tên: <span class="font-weight-bold"> {{item.hoten}}</span> </p>
+        </div>
+        <div class="" style="height: 90px; padding: 20px;">
+          <h1 class="card-text font-weight-bold text-center">MSNV: <span> {{item.sobaodanh}}</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</ng-container>

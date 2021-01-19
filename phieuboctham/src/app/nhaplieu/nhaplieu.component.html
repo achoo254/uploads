@@ -1,0 +1,8 @@
+<form class="user">
+  <div class="form-group">
+    <label for="ketthuc">Chọn file</label>
+    <input id="file" type="file" accept=".csv" (change)="fileUpload($event.target.files)">
+    <small id="ketthucHelp" class="form-text text-muted">Chọn file data....</small>
+  </div>
+  <button type="submit" class="btn btn-primary form-control" (click)="sendData()">In Phiếu</button>
+</form>
