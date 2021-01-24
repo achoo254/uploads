@@ -28,7 +28,8 @@
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
-										<f:form action="searchCategories" class="navbar-form" method="get">
+										<f:form action="searchCategories" class="navbar-form"
+											method="get">
 											<div class="input-group no-border">
 												<input type="text" value="" class="form-control" name="name"
 													style="bottom: -10px;"
@@ -76,7 +77,6 @@
 												<tr>
 													<th>ID</th>
 													<th>Tên</th>
-													<th>Chi tiết</th>
 													<th class="text-right">Nghiệp vụ</th>
 												</tr>
 											</thead>
@@ -87,8 +87,6 @@
 															<td class="text-primary">${categories.categoriesId}</td>
 															<td class="text-truncate"
 																style="max-width: 200px; height: 100px;">${categories.name}</td>
-															<td class="text-truncate"
-																style="max-width: 500px; height: 100px;">${categories.details}</td>
 															<td class="td-actions text-right"><a
 																class="text-primary btn-round"
 																href="<%=GlobalFunctions.baseUrl()%>/admin/categoriesDetails/${categories.categoriesId}">

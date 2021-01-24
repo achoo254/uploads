@@ -1,7 +1,5 @@
 package com.quanly.demo.model.dto;
 
-import javax.persistence.Column;
-
 import lombok.Data;
 
 @Data

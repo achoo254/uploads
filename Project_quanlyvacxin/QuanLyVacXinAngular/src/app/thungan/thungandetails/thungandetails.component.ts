@@ -57,7 +57,7 @@ export class ThungandetailsComponent implements OnInit {
     }
     else{
       this.userInfoService.GetUserInfoByToken(this.user.token, this.user.telephone).subscribe((data :UserInfo) => {
-        this.user = data;
+        this.user.roles = data.roles;
 
         this.userInfoService.getUserInfoByTokenAndRoles(this.user.token, eVariables.roles_thungan, this.user.telephone).subscribe((response : boolean) => {
           if(!response && this.user.roles != eVariables.roles_quanly && this.user.roles != eVariables.roles_quantri){

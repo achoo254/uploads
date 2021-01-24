@@ -1,18 +1,13 @@
 package com.quanly.demo.api;
 
-import javax.validation.Valid;
-
+import com.quanly.demo.model.Contact;
+import com.quanly.demo.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.quanly.demo.model.Contact;
-import com.quanly.demo.service.ContactService;
+import javax.validation.Valid;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")

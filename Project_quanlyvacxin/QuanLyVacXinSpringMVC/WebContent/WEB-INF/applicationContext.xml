@@ -28,7 +28,7 @@
 		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
 		<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=QuanLyVacXin"/>
 		<property name="username" value="sa"/>
-		<property name="password" value="7335140"/>
+		<property name="password" value="D@tma1989"/>
         <!-- these are connection pool properties for C3P0 -->
     </bean>
     <!-- Step 2: Setup Hibernate session factory -->

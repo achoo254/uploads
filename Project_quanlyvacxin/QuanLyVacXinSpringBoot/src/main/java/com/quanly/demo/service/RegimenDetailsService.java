@@ -1,15 +1,14 @@
 package com.quanly.demo.service;
 
-import java.util.List;
-
+import com.quanly.demo.model.Customer;
+import com.quanly.demo.model.RegimenDetails;
+import com.quanly.demo.model.dto.RegimenDetailsExDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.quanly.demo.model.Customer;
-import com.quanly.demo.model.RegimenDetails;
-import com.quanly.demo.model.dto.RegimenDetailsExDto;
+import java.util.List;
 
 @Repository
 public interface RegimenDetailsService extends JpaRepository<RegimenDetails, Integer> {

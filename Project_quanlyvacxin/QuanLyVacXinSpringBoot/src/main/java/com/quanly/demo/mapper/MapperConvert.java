@@ -1,8 +1,9 @@
 package com.quanly.demo.mapper;
 
+import org.modelmapper.ModelMapper;
+
 import java.util.List;
 import java.util.stream.Collectors;
-import org.modelmapper.ModelMapper;
 
 public class MapperConvert {
 	 public <S, T> List<T> mapList(List<S> listSource, Class<T> target) {

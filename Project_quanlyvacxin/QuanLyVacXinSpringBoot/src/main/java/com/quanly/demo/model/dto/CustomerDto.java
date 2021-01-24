@@ -1,12 +1,12 @@
 package com.quanly.demo.model.dto;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.quanly.demo.model.CustomerRoom;
 import com.quanly.demo.model.Notify;
 import com.quanly.demo.model.RegimenDetails;
-
 import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class CustomerDto {

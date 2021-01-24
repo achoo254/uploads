@@ -1,13 +1,12 @@
 package com.quanly.demo.model.dto;
 
+import com.quanly.demo.model.OrderDetails;
+import com.quanly.demo.model.UserInfo;
+import lombok.Data;
+
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.quanly.demo.model.OrderDetails;
-import com.quanly.demo.model.UserInfo;
-
-import lombok.Data;
 
 @Data
 public class RegimenDetailsDto {

@@ -76,7 +76,7 @@
 												<tr>
 													<th>ID</th>
 													<th>Tên</th>
-													<th>Chi tiết</th>
+										
 													<th class="text-right">Nghiệp vụ</th>
 												</tr>
 											</thead>
@@ -87,8 +87,6 @@
 															<td class="text-primary">${regimen.regimenId}</td>
 															<td class="text-truncate"
 																style="max-width: 200px; height: 100px;">${regimen.name}</td>
-															<td class="text-truncate"
-																style="max-width: 500px; height: 100px;">${regimen.details}</td>
 															<td class="td-actions text-right"><a
 																class="text-primary btn-round"
 																href="<%=GlobalFunctions.baseUrl()%>/admin/regimenDetails/${regimen.regimenId}">

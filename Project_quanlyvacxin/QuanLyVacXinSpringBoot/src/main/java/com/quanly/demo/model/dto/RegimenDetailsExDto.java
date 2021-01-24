@@ -1,11 +1,5 @@
 package com.quanly.demo.model.dto;
 
-import javax.persistence.Entity;
-
-import com.quanly.demo.model.RegimenDetails;
-
-import lombok.Data;
-
 public interface RegimenDetailsExDto{
 	Integer getMonth1();
 	Integer getMonth2();

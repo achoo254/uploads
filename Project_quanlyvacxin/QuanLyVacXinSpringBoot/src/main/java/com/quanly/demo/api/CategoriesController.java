@@ -1,23 +1,17 @@
 package com.quanly.demo.api;
 
 
-import java.util.List;
-
+import com.quanly.demo.mapper.MapperConvert;
+import com.quanly.demo.model.Categories;
+import com.quanly.demo.model.dto.CategoriesDto;
+import com.quanly.demo.service.CategoriesService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.quanly.demo.mapper.MapperConvert;
-import com.quanly.demo.model.Categories;
-import com.quanly.demo.model.Product;
-import com.quanly.demo.model.dto.CategoriesDto;
-import com.quanly.demo.service.CategoriesService;
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")

@@ -32,7 +32,7 @@ export class LichsutiemComponent implements OnInit {
     else{
       this.userInfoService.GetUserInfoByToken(this.user.token, this.user.telephone).subscribe((data :UserInfo) => {
         this.user = data;
-        if(this.user.roles != eVariables.roles_dieuduong && this.user.roles != eVariables.roles_bacsi && this.user.roles != eVariables.roles_quanly && this.user.roles != eVariables.roles_quantri){
+        if(this.user.roles != eVariables.roles_dieuduong && this.user.roles != eVariables.roles_bacsi && this.user.roles != eVariables.roles_quanly && this.user.roles != eVariables.roles_quantri && this.user.roles != eVariables.roles_khachhang){
           this.router.navigate(['/trangloi']);
         }
         else{

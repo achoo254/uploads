@@ -27,9 +27,9 @@
 									<div class="card-icon">
 										<i class="material-icons">content_copy</i>
 									</div>
-									<p class="card-category">Đang online</p>
+									<p class="card-category">Đã dăng ký</p>
 									<h3 class="card-title">
-										<br> ${countOnline} <small>online</small>
+										<br> ${countOnline}
 									</h3>
 								</div>
 								<div class="card-footer">
@@ -46,7 +46,7 @@
 									<div class="card-icon">
 										<i class="material-icons">store</i>
 									</div>
-									<p class="card-category">Tổng thu</p>
+									<p class="card-category">Tổng thu (VNĐ)</p>
 									<h3 class="card-title">
 										<br> ${sumOrders}
 									</h3>
@@ -64,7 +64,7 @@
 									<div class="card-icon">
 										<i class="material-icons">info_outline</i>
 									</div>
-									<p class="card-category">Tổng chi</p>
+									<p class="card-category">Tổng chi (VNĐ)</p>
 									<h3 class="card-title">
 										<br> ${sumProductDetails}
 									</h3>

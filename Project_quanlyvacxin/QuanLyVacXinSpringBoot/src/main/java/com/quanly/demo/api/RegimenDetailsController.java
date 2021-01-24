@@ -1,37 +1,20 @@
 package com.quanly.demo.api;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.validation.Valid;
-
+import com.quanly.demo.mapper.MapperConvert;
+import com.quanly.demo.model.Customer;
+import com.quanly.demo.model.RegimenDetails;
+import com.quanly.demo.model.dto.RegimenDetailsDto;
+import com.quanly.demo.model.dto.RegimenDetailsExDto;
+import com.quanly.demo.service.CustomerService;
+import com.quanly.demo.service.RegimenDetailsService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.quanly.demo.mapper.MapperConvert;
-import com.quanly.demo.model.Customer;
-import com.quanly.demo.model.CustomerRoom;
-import com.quanly.demo.model.Product;
-import com.quanly.demo.model.ProductDetails;
-import com.quanly.demo.model.Regimen;
-import com.quanly.demo.model.RegimenDetails;
-import com.quanly.demo.model.Room;
-import com.quanly.demo.model.dto.CustomerRoomDto;
-import com.quanly.demo.model.dto.RegimenDetailsDto;
-import com.quanly.demo.model.dto.RegimenDetailsExDto;
-import com.quanly.demo.model.dto.RoomDto;
-import com.quanly.demo.service.CustomerService;
-import com.quanly.demo.service.RegimenDetailsService;
+import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")

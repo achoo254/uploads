@@ -1,9 +1,5 @@
 package com.quanly.demo.model.dto;
 
-import com.quanly.demo.model.Customer;
-import com.quanly.demo.model.Orders;
-import com.quanly.demo.model.Product;
-
 import lombok.Data;
 
 @Data

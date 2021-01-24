@@ -1,13 +1,11 @@
 package com.quanly.demo.service;
 
-import java.util.List;
-
+import com.quanly.demo.model.Customer;
+import com.quanly.demo.model.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.quanly.demo.model.Customer;
-import com.quanly.demo.model.UserInfo;
-import com.quanly.demo.model.dto.CustomerDto;
+import java.util.List;
 
 @Repository
 public interface UserInfoService extends JpaRepository<UserInfo, Integer> {

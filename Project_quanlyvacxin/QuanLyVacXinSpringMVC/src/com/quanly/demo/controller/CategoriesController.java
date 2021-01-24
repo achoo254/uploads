@@ -3,7 +3,8 @@ package com.quanly.demo.controller;
 import com.quanly.demo.model.entity.Categories;
 import com.quanly.demo.model.service.CategoriesService;
 import com.quanly.demo.ultis.GlobalFunctions;
-import org.springframework.beans.factory.annotationua .Autowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;

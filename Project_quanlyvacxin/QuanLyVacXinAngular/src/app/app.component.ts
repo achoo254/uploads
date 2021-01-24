@@ -1,3 +1,4 @@
+import { eVariables } from 'src/app/obj/variables';
 import { ProductService } from './service/Product.service';
 import { Notify } from './obj/Notify';
 import { UserInfoService } from './service/UserInfo.service';
@@ -25,6 +26,12 @@ export class AppComponent implements OnInit {
   product : Product = new Product();
   countNotify : number = 0;
   user : UserInfo = new UserInfo();
+  roles_quanly = eVariables.roles_quanly;
+  roles_quantri = eVariables.roles_quantri;
+  roles_tieptan = eVariables.roles_tieptan;
+  roles_bacsi = eVariables.roles_bacsi;
+  roles_dieuduong = eVariables.roles_dieuduong;
+  roles_thungan = eVariables.roles_thungan;
   isLogin : boolean;
   customerId : number;
   modalRefResultSearch: BsModalRef;

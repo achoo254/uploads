@@ -1,5 +1,6 @@
 package com.quanly.demo.controller;
 
+import com.quanly.demo.model.entity.Regimen;
 import com.quanly.demo.model.entity.UserInfo;
 import com.quanly.demo.model.service.UserInfoService;
 import com.quanly.demo.ultis.GlobalFunctions;
@@ -97,9 +98,6 @@ public class UserInfoController {
 			if(check) {
 				//Lấy lại thông tin sau khi update
 				UserInfo userUpdate = userInfoService.getUserInfoById(user.getUserInfoId());
-				//Reset lại fullName
-				session.removeAttribute("fullName");
-				session.setAttribute("fullName", userUpdate.getFullName());
 				//Khai bao doi tuong mav
 				mav = new ModelAndView("userinfodetails");
 				//add doi tuong vao mav
@@ -173,5 +171,4 @@ public class UserInfoController {
 		}
 		return mav;
 	}
-
 }

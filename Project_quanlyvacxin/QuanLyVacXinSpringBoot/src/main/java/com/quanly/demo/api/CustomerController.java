@@ -1,32 +1,20 @@
 package com.quanly.demo.api;
 
 
-import java.util.List;
-
-import javax.validation.Valid;
-
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.quanly.demo.mapper.MapperConvert;
 import com.quanly.demo.model.Customer;
 import com.quanly.demo.model.CustomerRoom;
 import com.quanly.demo.model.UserInfo;
 import com.quanly.demo.model.dto.CustomerDto;
-import com.quanly.demo.model.dto.UserInfoDto;
 import com.quanly.demo.service.CustomerRoomService;
 import com.quanly.demo.service.CustomerService;
 import com.quanly.demo.service.UserInfoService;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
