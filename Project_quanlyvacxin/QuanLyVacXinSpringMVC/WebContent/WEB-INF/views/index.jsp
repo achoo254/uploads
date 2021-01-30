@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Quản lý dịch vụ vắc xin</title>
+<title>Quản lý dịch vụ tiêm chủng vắc xin</title>
 <jsp:include page="/WEB-INF/includes/meta.jsp"></jsp:include>
 </head>
 <!-- BODY -->

@@ -23,24 +23,24 @@ export class ThunganComponent implements OnInit {
     this.router.navigate(['/dangnhap/']);
   }
   else{
-    this.userInfoService.GetUserInfoByToken(this.user.token, this.user.telephone).subscribe((data :UserInfo) => {
-      this.user.roles = data.roles;
+      this.userInfoService.GetUserInfoByToken(this.user.token, this.user.telephone).subscribe((data :UserInfo) => {
+        this.user.roles = data.roles;
 
-      this.userInfoService.getUserInfoByTokenAndRoles(this.user.token, eVariables.roles_thungan, this.user.telephone).subscribe((response : boolean) => {
-        if(!response && this.user.roles != eVariables.roles_quanly && this.user.roles != eVariables.roles_quantri){
-          this.router.navigate(['/trangloi']);
-        }
-        else{
-          this.service.GetAllRoomByNameAndStatus(eVariables.phongthungan, true).subscribe((response : any) => {
-            if(response != null){
-              this.listRoom = response;
-            }
-            console.log(response);
-          });
-        }
+        this.userInfoService.getUserInfoByTokenAndRoles(this.user.token, eVariables.roles_thungan, this.user.telephone).subscribe((response : boolean) => {
+          if(!response && this.user.roles != eVariables.roles_quanly && this.user.roles != eVariables.roles_quantri){
+            this.router.navigate(['/trangloi']);
+          }
+          else{
+            this.service.GetAllRoomByNameAndStatus(eVariables.phongthungan, true).subscribe((response : any) => {
+              if(response != null){
+                this.listRoom = response;
+              }
+              console.log(response);
+            });
+          }
+        });
       });
-    });
-  }
+    }
   }
 
 }

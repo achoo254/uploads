@@ -134,12 +134,13 @@ export class AppComponent implements OnInit {
     if(this.product.name != ''){
       this.productService.GetAllProduct().subscribe((data : Product[]) => {
         data.forEach(item=>{
-          if(item.name.indexOf(this.product.name) > -1){
+          if(item.name.toLowerCase().startsWith(this.product.name.toLowerCase())){
             this.modalRefResultSearch = this.modalService.show(templateRef, { id: 1, class: 'modal-sm' });
             this.openCloseModalAutoSubmit(1);
             setTimeout(()=>{
-              this.router.navigate(['/product/'+item.productId]);
+              window.location.reload();
               }, 2000);
+              this.router.navigate(['/product/'+item.productId]);
           }
         });
       });
