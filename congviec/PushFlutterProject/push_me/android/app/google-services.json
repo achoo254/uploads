@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1077178792502",
+    "project_id": "pushme-29e40",
+    "storage_bucket": "pushme-29e40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077178792502:android:4ef3e0f8bfae7cd0f7f697",
+        "android_client_info": {
+          "package_name": "com.myapp.push_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077178792502-6c8depglv8fam8f1q61s8icm629c9res.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5z21cdoEU6Rz0BE347DXDIdVkVKKvM6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077178792502-6c8depglv8fam8f1q61s8icm629c9res.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
